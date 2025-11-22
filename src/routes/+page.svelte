@@ -1,5 +1,6 @@
 <script lang="ts">
 	import Container from '$lib/components/container.svelte';
+	import Section from '$lib/components/section.svelte';
 	import { Card, Button, Heading, P, List, Li } from 'flowbite-svelte';
 
 	const intro =
@@ -48,7 +49,7 @@
 </script>
 
 <!-- Hero -->
-<section class="py-16 bg-dark-gradient">
+<Section variant="dark">
 	<Container>
 		<Heading tag="h1" class="mb-6 tracking-tight text-white">
 			Flexibler IT-Dienstleister für Entwicklung & Infrastruktur
@@ -59,10 +60,10 @@
 			<Button color="light">Leistungen ansehen</Button>
 		</div>
 	</Container>
-</section>
+</Section>
 
 <!-- Leistungen -->
-<section class="py-16">
+<Section>
 	<Container>
 		<Heading tag="h2" class="mb-8">Meine Kernleistungen</Heading>
 		<div class="grid gap-8 md:grid-cols-2">
@@ -78,10 +79,10 @@
 			{/each}
 		</div>
 	</Container>
-</section>
+</Section>
 
 <!-- Call to action -->
-<section class="py-16 bg-dark-gradient">
+<Section variant="dark">
 	<Container class="text-center">
 		<Heading tag="h2" class="text-white mb-4">Bereit für den nächsten Schritt?</Heading>
 		<P class="text-center text-white mb-8">
@@ -90,4 +91,4 @@
 		</P>
 		<Button size="lg">Unverbindlich anfragen</Button>
 	</Container>
-</section>
+</Section>
