@@ -8,10 +8,7 @@
 		FooterLinkGroup,
 		FooterLink,
 		Navbar,
-		NavBrand,
-        NavHamburger,
-        NavUl,
-        NavLi
+		NavBrand
 	} from 'flowbite-svelte';
 	import '../app.css';
 	import favicon from '$lib/assets/favicon.svg';
@@ -21,7 +18,8 @@
 
 <svelte:head>
 	<div style="display:none">
-		{#each locales as locale}
+		{#each locales as locale (locale)}
+			<!-- eslint-disable-next-line svelte/no-navigation-without-resolve -->
 			<a href={localizeHref(page.url.pathname, { locale })}>{locale}</a>
 		{/each}
 	</div>
@@ -29,14 +27,8 @@
 </svelte:head>
 
 <Navbar>
-	<NavBrand href="/">
-        Andreas Schlößl
-    </NavBrand>
-    <DarkMode></DarkMode>
-    <NavHamburger></NavHamburger>
-    <NavUl>
-        <NavLi>About</NavLi>
-    </NavUl>
+	<NavBrand href="/">Andreas Schlößl</NavBrand>
+	<DarkMode></DarkMode>
 </Navbar>
 {@render children()}
 <Footer>

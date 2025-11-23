@@ -1,21 +1,27 @@
 <script lang="ts">
-    const { class: className, variant, children }: { class?: string; variant?: 'dark'; children: any } = $props();
+	const {
+		class: className,
+		variant,
+		children,
+		...otherProps
+		// eslint-disable-next-line @typescript-eslint/no-explicit-any
+	}: { class?: string; variant?: 'dark'; children: any } & { [key: string]: any } = $props();
 
-    const classes = $derived.by(() => {
-        let result = 'py-16';
+	const classes = $derived.by(() => {
+		let result = 'py-16';
 
-        if (className) {
-            result += ` ${className}`;
-        }
+		if (className) {
+			result += ` ${className}`;
+		}
 
-        if (variant === 'dark') {
-            result += ' bg-dark-gradient';
-        }
+		if (variant === 'dark') {
+			result += ' bg-dark-gradient';
+		}
 
-        return result;
-    });
+		return result;
+	});
 </script>
 
-<div class={classes}>
-    {@render children?.()}
-</div>
+<section class={classes} {...otherProps}>
+	{@render children?.()}
+</section>
