@@ -17,7 +17,7 @@
 <Card size="xl" class="p-8 flex flex-col gap-8">
 	<!-- Header -->
 	<div class="flex flex-col md:flex-row md:items-center gap-6">
-		<div class="flex items-center gap-4">
+		<div class="flex flex-wrap md:flex-nowrap items-center gap-4">
 			<img
 				src="https://logigator.com/assets/logo_light.svg"
 				alt="Logigator Logo"

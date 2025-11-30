@@ -2,6 +2,7 @@
 	import Container from '$lib/components/container.svelte';
 	import Section from '$lib/components/section.svelte';
 	import HeroContent from '$lib/components/sections/hero-content.svelte';
+	import AboutContent from '$lib/components/sections/about-content.svelte';
 	import ServicesContent from '$lib/components/sections/services-content.svelte';
 	import TechnologiesContent from '$lib/components/sections/technologies-content.svelte';
 	import CallToActionContent from '$lib/components/sections/call-to-action-content.svelte';
@@ -14,6 +15,13 @@
 <Section variant="dark">
 	<Container>
 		<HeroContent />
+	</Container>
+</Section>
+
+<!-- About Me -->
+<Section>
+	<Container>
+		<AboutContent />
 	</Container>
 </Section>
 

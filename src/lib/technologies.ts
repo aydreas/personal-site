@@ -9,22 +9,22 @@ export type TechnologyCategory = {
 
 export const technologyCategories = {
 	frontend: {
-		label: 'Frontend'
+		label: 'Frontend UI & Frameworks'
 	},
 	backend: {
-		label: 'Backend'
+		label: 'Backend & APIs'
 	},
 	devops: {
 		label: 'Cloud & Infrastructure'
 	},
 	database: {
-		label: 'Datenbanken'
+		label: 'Data & Storage'
 	},
-	qa: {
-		label: 'Testing & QA'
+	languages: {
+		label: 'Programming languages'
 	},
 	sysadmin: {
-		label: 'Systemadministration'
+		label: 'Platform & OS'
 	}
 } satisfies Record<string, TechnologyCategory>;
 
@@ -33,169 +33,245 @@ export type Technology = {
 	label: string;
 	color: Color;
 	description: string;
-	icon: string;
+	icon?: string;
 };
 
 export const technologies = {
-	typescript: {
-		category: 'frontend',
-		label: 'TypeScript',
-		color: 'blue',
-		description: 'Typisiert JS',
-		icon: 'SiTypescript'
-	},
-	vue: {
-		category: 'frontend',
-		label: 'Vue.js',
-		color: 'green',
-		description: 'Progressives Framework',
-		icon: 'SiVuedotjs'
-	},
-	react: {
-		category: 'frontend',
-		label: 'React',
-		color: 'blue',
-		description: 'Komponenten UI',
-		icon: 'SiReact'
-	},
+	// backend
 	nestjs: {
 		category: 'backend',
 		label: 'NestJS',
 		color: 'red',
-		description: 'Modulares API Framework',
-		icon: 'SiNestjs'
-	},
-	angular: {
-		category: 'frontend',
-		label: 'Angular',
-		color: 'red',
-		description: 'Enterprise Frontend',
-		icon: 'SiAngular'
+		description: 'Structured scalable APIs',
+		icon: 'devicon-nestjs-original'
 	},
 	spring: {
 		category: 'backend',
 		label: 'Java Spring',
 		color: 'green',
-		description: 'Java Microservices',
-		icon: 'SiSpring'
+		description: 'Robust enterprise microservices',
+		icon: 'devicon-spring-original'
 	},
-	grafana: {
-		category: 'devops',
-		label: 'Grafana',
-		color: 'orange',
-		description: 'Metrics Dashboards',
-		icon: 'SiGrafana'
-	},
-	docker: {
-		category: 'devops',
-		label: 'Docker',
-		color: 'blue',
-		description: 'Container Plattform',
-		icon: 'SiDocker'
-	},
-	kubernetes: {
-		category: 'devops',
-		label: 'Kubernetes',
-		color: 'blue',
-		description: 'Container Orchestrierung',
-		icon: 'SiKubernetes'
-	},
-	jest: {
-		category: 'qa',
-		label: 'Jest',
+	dotnet: {
+		category: 'backend',
+		label: '.NET / ASP.NET',
 		color: 'purple',
-		description: 'JS Test-Framework',
-		icon: 'SiJest'
+		description: 'Cross-platform web power',
+		icon: 'devicon-dot-net-plain'
 	},
+	nodejs: {
+		category: 'backend',
+		label: 'Node.js',
+		color: 'green',
+		description: 'Fast server-side JavaScript',
+		icon: 'devicon-nodejs-plain'
+	},
+	graphql: {
+		category: 'backend',
+		label: 'GraphQL',
+		color: 'pink',
+		description: 'Efficient data fetching',
+		icon: 'devicon-graphql-plain'
+	},
+
+	// database
 	postgresql: {
 		category: 'database',
 		label: 'PostgreSQL',
 		color: 'blue',
-		description: 'Relationale DB',
-		icon: 'SiPostgresql'
+		description: 'Reliable relational engine',
+		icon: 'devicon-postgresql-plain'
 	},
 	mysql: {
 		category: 'database',
 		label: 'MySQL',
 		color: 'amber',
-		description: 'Relationale DB',
-		icon: 'SiMysql'
+		description: 'Proven relational workhorse',
+		icon: 'devicon-mysql-original'
 	},
 	mongodb: {
 		category: 'database',
 		label: 'MongoDB',
 		color: 'green',
-		description: 'Dokumenten DB',
-		icon: 'SiMongodb'
-	},
-	dotnet: {
-		category: 'backend',
-		label: '.NET',
-		color: 'purple',
-		description: '.NET Plattform',
-		icon: 'SiDotnet'
-	},
-	php: {
-		category: 'backend',
-		label: 'PHP',
-		color: 'primary',
-		description: 'Web Skriptsprache',
-		icon: 'SiPhp'
-	},
-	linux: {
-		category: 'sysadmin',
-		label: 'Linux',
-		color: 'primary',
-		description: 'Server OS',
-		icon: 'SiLinux'
-	},
-	bash: {
-		category: 'sysadmin',
-		label: 'Bash',
-		color: 'primary',
-		description: 'Shell Skripting',
-		icon: 'SiGnubash'
+		description: 'Flexible document storage',
+		icon: 'devicon-mongodb-plain'
 	},
 	influx: {
 		category: 'database',
 		label: 'InfluxDB',
 		color: 'blue',
-		description: 'Zeitreihen DB',
-		icon: 'SiInfluxdb'
-	},
-	prometheus: {
-		category: 'devops',
-		label: 'Prometheus',
-		color: 'orange',
-		description: 'Metrics Monitoring',
-		icon: 'SiPrometheus'
-	},
-	proxmox: {
-		category: 'sysadmin',
-		label: 'Proxmox',
-		color: 'orange',
-		description: 'Virtualisierung',
-		icon: 'SiProxmox'
+		description: 'Time-series insights fast',
+		icon: 'devicon-influxdb-original'
 	},
 	zfs: {
-		category: 'sysadmin',
+		category: 'database',
 		label: 'ZFS',
 		color: 'green',
-		description: 'Fortschrittliches FS',
-		icon: 'MdStorage'
+		description: 'Resilient storage management',
+		icon: 'icon-zfs'
 	},
-	opnsense: {
-		category: 'sysadmin',
-		label: 'OPNsense',
+	redis: {
+		category: 'database',
+		label: 'Redis',
 		color: 'red',
-		description: 'Firewall Plattform',
-		icon: 'MdSecurity'
+		description: 'Blazing in-memory speed',
+		icon: 'devicon-redis-plain'
+	},
+
+	// devops
+	docker: {
+		category: 'devops',
+		label: 'Docker & Kubernetes',
+		color: 'blue',
+		description: 'Portable scalable containers',
+		icon: 'devicon-docker-plain'
 	},
 	azure: {
 		category: 'devops',
 		label: 'Azure',
 		color: 'blue',
-		description: 'Cloud Dienste',
-		icon: 'SiMicrosoftazure'
+		description: 'Enterprise cloud services',
+		icon: 'devicon-azure-plain'
+	},
+	ansible: {
+		category: 'devops',
+		label: 'Ansible',
+		color: 'red',
+		description: 'Simple automation at scale',
+		icon: 'devicon-ansible-plain'
+	},
+	proxmox: {
+		category: 'devops',
+		label: 'Proxmox',
+		color: 'orange',
+		description: 'Efficient virtualization platform',
+		icon: 'devicon-proxmox-plain-wordmark'
+	},
+	prometheusGrafana: {
+		category: 'devops',
+		label: 'Prometheus & Grafana',
+		color: 'orange',
+		description: 'Actionable metrics monitoring',
+		icon: 'devicon-grafana-plain'
+	},
+	githubActions: {
+		category: 'devops',
+		label: 'GitHub Actions',
+		color: 'gray',
+		description: 'Streamlined CI/CD pipelines',
+		icon: 'devicon-githubactions-plain'
+	},
+
+	// frontend
+	vue: {
+		category: 'frontend',
+		label: 'Vue.js / Nuxt.js',
+		color: 'green',
+		description: 'Elegant progressive UI',
+		icon: 'devicon-vuejs-plain'
+	},
+	react: {
+		category: 'frontend',
+		label: 'React / Next.js',
+		color: 'blue',
+		description: 'Reusable component-driven UI',
+		icon: 'devicon-react-original'
+	},
+	angular: {
+		category: 'frontend',
+		label: 'Angular',
+		color: 'red',
+		description: 'Full-featured enterprise frontend',
+		icon: 'devicon-angular-plain'
+	},
+	svelte: {
+		category: 'frontend',
+		label: 'Svelte / SvelteKit',
+		color: 'orange',
+		description: 'Lightning-fast compiled UI',
+		icon: 'devicon-svelte-plain'
+	},
+
+	// languages
+	php: {
+		category: 'languages',
+		label: 'PHP',
+		color: 'primary',
+		description: 'Fast server-side web',
+		icon: 'devicon-php-plain'
+	},
+	javascript: {
+		category: 'languages',
+		label: 'JavaScript',
+		color: 'yellow',
+		description: 'Universal web language',
+		icon: 'devicon-javascript-plain'
+	},
+	typescript: {
+		category: 'languages',
+		label: 'TypeScript',
+		color: 'blue',
+		description: 'Safer scalable JavaScript',
+		icon: 'devicon-typescript-plain'
+	},
+	java: {
+		category: 'languages',
+		label: 'Java',
+		color: 'orange',
+		description: 'Reliable cross-platform apps',
+		icon: 'devicon-java-plain'
+	},
+	cpp: {
+		category: 'languages',
+		label: 'C / C++',
+		color: 'blue',
+		description: 'High-performance systems code',
+		icon: 'devicon-cplusplus-plain'
+	},
+	csharp: {
+		category: 'languages',
+		label: 'C#',
+		color: 'purple',
+		description: 'Versatile Microsoft language',
+		icon: 'devicon-csharp-plain'
+	},
+
+	// sysadmin
+	linux: {
+		category: 'sysadmin',
+		label: 'Linux',
+		color: 'primary',
+		description: 'Stable secure server OS',
+		icon: 'devicon-linux-plain'
+	},
+	bash: {
+		category: 'sysadmin',
+		label: 'Bash',
+		color: 'primary',
+		description: 'Automate with shell scripts',
+		icon: 'devicon-bash-plain'
+	},
+	opnsense: {
+		category: 'sysadmin',
+		label: 'pfSense / OPNsense',
+		color: 'red',
+		description: 'Powerful open firewall',
+		icon: 'devicon-pfsense-original'
+	},
+
+	// Windows administration
+	activeDirectory: {
+		category: 'sysadmin',
+		label: 'Active Directory',
+		color: 'blue',
+		description: 'Centralized identity management',
+		icon: 'devicon-windows11-original'
+	},
+	powershell: {
+		category: 'sysadmin',
+		label: 'PowerShell',
+		color: 'blue',
+		description: 'Scriptable admin automation',
+		icon: 'devicon-powershell-plain'
 	}
 } satisfies Record<string, Technology>;

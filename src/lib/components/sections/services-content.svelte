@@ -40,7 +40,7 @@
 <div class="grid gap-8 md:grid-cols-2">
 	{#each services as s (s.title)}
 		<Card size="xl" class="p-8">
-			<Heading tag="h3" class="mb-4">{s.title}</Heading>
+			<Heading tag="h3" class="mb-4 hyphens-auto break-words">{s.title}</Heading>
 			<List>
 				{#each s.points as p (p)}
 					<Li>{p}</Li>

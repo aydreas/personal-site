@@ -48,7 +48,7 @@
 		<TimelineItem date={ed.period} title={buildEducationTitle(ed)}>
 			<div class="flex gap-4">
 				<div
-					class={`w-10 h-10 rounded-full flex items-center justify-center font-semibold ${ed.placeholder.bg} ${ed.placeholder.text} ${ed.placeholder.textSize || 'text-xs'}`}
+					class={`flex-shrink-0 w-10 h-10 rounded-full flex items-center justify-center font-semibold ${ed.placeholder.bg} ${ed.placeholder.text} ${ed.placeholder.textSize || 'text-xs'}`}
 					aria-hidden="true"
 				>
 					{ed.initials}

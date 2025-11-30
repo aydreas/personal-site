@@ -13,7 +13,7 @@
 	{#each Object.entries(technologyCategories) as [categoryKey, category] (categoryKey)}
 		<Card size="lg" class="p-6">
 			<Heading tag="h3" class="mb-4 text-lg">{category.label}</Heading>
-			<div class="flex flex-wrap gap-4">
+			<div class="flex flex-wrap justify-around gap-4">
 				{#each getTechnologyByCategory(categoryKey) as t (t.label)}
 					<CardFlip name={t.label} description={t.description} icon={t.icon} />
 				{/each}

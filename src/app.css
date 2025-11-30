@@ -1,6 +1,18 @@
 @import 'tailwindcss';
+@import "devicon/devicon.min.css";
+@import "./icons.css";
 
 @plugin 'flowbite/plugin';
+
+@source "../node_modules/flowbite-svelte/dist/badge";
+@source "../node_modules/flowbite-svelte/dist/card";
+@source "../node_modules/flowbite-svelte/dist/avatar";
+@source "../node_modules/flowbite-svelte/dist/typography";
+@source "../node_modules/flowbite-svelte/dist/buttons";
+@source "../node_modules/flowbite-svelte/dist/timeline";
+@source "../node_modules/flowbite-svelte/dist/darkmode";
+@source "../node_modules/flowbite-svelte/dist/footer";
+@source "../node_modules/flowbite-svelte/dist/navbar";
 
 @custom-variant dark (&:where(.dark, .dark *));
 
@@ -28,9 +40,6 @@
 	--color-secondary-900: #0c4a6e;
 }
 
-@source "../node_modules/flowbite-svelte/dist";
-@source "../node_modules/flowbite-svelte-icons/dist";
-
 @layer base {
 	/* disable chrome cancel button */
 	input[type='search']::-webkit-search-cancel-button {
@@ -38,11 +47,19 @@
 	}
 }
 
-body {
+html {
 	@apply bg-gray-100 dark:bg-gray-900;
 	@apply text-gray-900  dark:text-white;
+    scroll-behavior: smooth;
 }
 
 .bg-dark-gradient {
 	@apply bg-gradient-to-r from-slate-900 via-slate-800 to-slate-900 dark:from-slate-700 dark:via-slate-600 dark:to-slate-700;
+}
+
+@media (max-width: 420px) {
+    /* reduce rem size on small screens */
+    html {
+        font-size: 0.875rem;
+    }
 }
