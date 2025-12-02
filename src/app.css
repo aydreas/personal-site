@@ -1,6 +1,6 @@
 @import 'tailwindcss';
-@import "devicon/devicon.min.css";
-@import "./icons.css";
+@import 'devicon/devicon.min.css';
+@import './icons.css';
 
 @plugin 'flowbite/plugin';
 
@@ -50,7 +50,7 @@
 html {
 	@apply bg-gray-100 dark:bg-gray-900;
 	@apply text-gray-900  dark:text-white;
-    scroll-behavior: smooth;
+	scroll-behavior: smooth;
 }
 
 .bg-dark-gradient {
@@ -58,8 +58,8 @@ html {
 }
 
 @media (max-width: 420px) {
-    /* reduce rem size on small screens */
-    html {
-        font-size: 0.875rem;
-    }
+	/* reduce rem size on small screens */
+	html {
+		font-size: 0.875rem;
+	}
 }

@@ -2,7 +2,7 @@ import { paraglideVitePlugin } from '@inlang/paraglide-js';
 import tailwindcss from '@tailwindcss/vite';
 import { sveltekit } from '@sveltejs/kit/vite';
 import { defineConfig } from 'vite';
-import pluginPurgeCss from "vite-plugin-purgecss-updated-v5";
+import pluginPurgeCss from 'vite-plugin-purgecss-updated-v5';
 
 export default defineConfig({
 	plugins: [
@@ -16,7 +16,7 @@ export default defineConfig({
 		}),
 		// Remove unused devicon classes
 		pluginPurgeCss({
-			safelist: [/^(?!devicon-).*$/],
+			safelist: [/^(?!devicon-).*$/]
 		})
 	]
 });
