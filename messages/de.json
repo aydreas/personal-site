@@ -9,5 +9,199 @@
 		"paragraph1": "Ich bin leidenschaftlicher Softwareentwickler und IT-Spezialist mit Fokus auf robuste Webanwendungen, Cloud-Infrastruktur und Automatisierung. In meiner täglichen Arbeit verbinde ich Entwicklung und Betrieb, um skalierbare Systeme mit klarer Architektur und effizienter Delivery zu schaffen.",
 		"paragraph2": "Besonders wichtig sind mir pragmatische Lösungen, saubere Codebasis und nachvollziehbare Prozesse. Ich arbeite gerne eng mit Teams zusammen, identifiziere Engpässe und setze Verbesserungen um, die langfristig Wartbarkeit und Geschwindigkeit erhöhen.",
 		"paragraph3": "Außerhalb von Kundenprojekten experimentiere ich mit neuen Technologien, optimiere DevOps-Workflows und erweitere mein Wissen in Sicherheits- und Performancefragen."
+	},
+	"servicesContent": {
+		"headline": "Meine Kernleistungen",
+		"software": {
+			"title": "Softwareentwicklung & Automatisierung",
+			"p1": "Individuelle Anwendungen",
+			"p2": "API-Integrationen",
+			"p3": "Skripte",
+			"p4": "Prozessoptimierungen"
+		},
+		"admin": {
+			"title": "Systemadministration & Infrastruktur",
+			"p1": "Betreuung bestehender Systeme",
+			"p2": "Monitoring",
+			"p3": "Security-Checks",
+			"p4": "Cloud-Einrichtung (AWS/Azure/GCP)",
+			"p5": "Containerisierung",
+			"p6": "CI/CD"
+		},
+		"consulting": {
+			"title": "IT-Consulting & Architekturberatung",
+			"p1": "Technische Entscheidungsbegleitung",
+			"p2": "Evaluierung neuer Tools",
+			"p3": "Modernisierung bestehender Systeme"
+		},
+		"support": {
+			"title": "Support & Troubleshooting",
+			"p1": "Schnelle Problemlösungen Remote oder vor Ort",
+			"p2": "Fehlersuche",
+			"p3": "Stabilisierung von Systemen"
+		}
+	},
+	"technologies": {
+		"categories": {
+			"frontend": "Frontend UI & Frameworks",
+			"backend": "Backend & APIs",
+			"devops": "Cloud & Infrastruktur",
+			"database": "Daten & Speicherung",
+			"languages": "Programmiersprachen",
+			"sysadmin": "Plattform & Betriebssysteme"
+		},
+		"descriptions": {
+			"nestjs": "Strukturierte, skalierbare APIs",
+			"spring": "Robuste Enterprise-Microservices",
+			"dotnet": "Plattformübergreifende Web-Power",
+			"nodejs": "Schnelles serverseitiges JavaScript",
+			"graphql": "Effizientes Daten-Fetching",
+
+			"postgresql": "Zuverlässige relationale Engine",
+			"mysql": "Bewährtes relationales Arbeitstier",
+			"mongodb": "Flexible Dokumentenspeicherung",
+			"influx": "Schnelle Time-Series-Analysen",
+			"zfs": "Widerstandsfähiges Speicher-Management",
+			"redis": "Blitzschneller In-Memory-Cache",
+
+			"docker": "Portabel skalierbare Container",
+			"azure": "Enterprise-Cloud-Services",
+			"ansible": "Einfache Automatisierung im großen Maßstab",
+			"proxmox": "Effiziente Virtualisierungsplattform",
+			"prometheusGrafana": "Handlungsrelevantes Monitoring",
+			"githubActions": "Vereinfachte CI/CD-Pipelines",
+
+			"vue": "Elegante, progressive UI",
+			"react": "Wiederverwendbare, komponentengetriebene UI",
+			"angular": "Vollumfängliches Enterprise-Frontend",
+			"svelte": "Blitzschnelles, kompiliertes UI",
+
+			"php": "Schnelles serverseitiges Web",
+			"javascript": "Universelle Websprache",
+			"typescript": "Sichereres, skalierbares JavaScript",
+			"java": "Zuverlässige plattformunabhängige Anwendungen",
+			"cpp": "Hochperformanter Systemcode",
+			"csharp": "Vielseitige Microsoft-Sprache",
+
+			"linux": "Stabiles, sicheres Server-Betriebssystem",
+			"bash": "Automatisierung mit Shell-Skripten",
+			"opnsense": "Leistungsstarke Open-Source-Firewall",
+			"activeDirectory": "Zentralisiertes Identitätsmanagement",
+			"powershell": "Skriptbare Admin-Automatisierung"
+		}
+	},
+	"callToAction": {
+		"headline": "Bereit für den nächsten Schritt?",
+		"paragraph": "Lass uns unverbindlich über deine aktuelle Herausforderung sprechen – oft genügt schon ein kurzer Austausch für erste klare Ansätze.",
+		"button": "Unverbindlich anfragen"
+	},
+	"education": {
+		"headline": "Ausbildung",
+		"tuw": {
+			"company": "Technische Universität Wien",
+			"role": "B.Sc. Informatik",
+			"period": "2021 – 2025",
+			"description": "Bachelor of Science (B.Sc.) in Informatik"
+		},
+		"htl": {
+			"company": "HTL Rennweg",
+			"role": "Matura",
+			"period": "2015 – 2020",
+			"description": "Matura in Informationstechnologie"
+		}
+	},
+	"experiences": {
+		"headline": "Beruflicher Werdegang",
+		"SE": {
+			"company": "Selbstständig",
+			"role": "Unabhängiger IT-Berater & Entwickler",
+			"period": "Okt. 2025 – Gegenwart",
+			"description": "Freiberufliche IT-Beratung und Softwareentwicklung"
+		},
+		"BBLead": {
+			"company": "Bitberry",
+			"role": "DevOps Technical Lead",
+			"period": "Apr. 2023 – Okt. 2025",
+			"location": "Wien, Österreich",
+			"details": {
+				"1": "Konzeption, Implementierung und Wartung von CI/CD-Pipelines",
+				"2": "Verbesserung der Codequalität und Deployment-Workflows",
+				"3": "Verantwortung für Entwicklungs- und Produktionsinfrastruktur"
+			}
+		},
+		"BBDev": {
+			"company": "Bitberry",
+			"role": "Full-Stack-Entwickler",
+			"period": "Sep. 2021 – Okt. 2025",
+			"location": "Wien, Österreich",
+			"details": {
+				"1": "Softwareprojekte entwickelt und gestaltet"
+			}
+		},
+		"CS": {
+			"company": "Corestad",
+			"role": "Software Engineer",
+			"period": "Jun. 2021 – Aug. 2021",
+			"location": "Wien, Österreich",
+			"details": {
+				"1": "Webanwendungen entwickelt und bei Serverinfrastruktur beraten"
+			}
+		},
+		"NXAdmin": {
+			"company": "NAVAX",
+			"role": "IT-Administrator",
+			"period": "Aug. 2018 – Dez. 2020",
+			"location": "Wien, Österreich",
+			"details": {
+				"1": "Windows-, Linux- und Microsoft-365-Umgebungen administriert",
+				"2": "Interne Tools zur Effizienzsteigerung der Infrastruktur gebaut"
+			}
+		},
+		"NXIntern": {
+			"company": "NAVAX",
+			"role": "IT-Praktikant",
+			"period": "Jul. 2018",
+			"location": "Wien, Österreich",
+			"description": "Kurzzeitpraktikum in der IT-Abteilung"
+		},
+		"BDBIntern": {
+			"company": "Buchhaltungsagentur des Bundes",
+			"role": "IT-Praktikant",
+			"period": "Aug. 2018",
+			"location": "Wien, Österreich",
+			"description": "Kurzzeitpraktikum in der IT-Abteilung"
+		}
+	},
+	"logigator": {
+		"headline": "Manchmal erzählen persönliche Projekte die besten Geschichten",
+		"title": "Logigator: Digitale Logik einfach lernen & anwenden",
+		"intro": "Logigator ist eine von mir entwickelte offene Plattform zum Entwerfen und Simulieren digitaler Logikschaltungen direkt im Browser. Sie verbindet einen intuitiven Editor mit einer schnellen Echtzeitsimulation und eignet sich sowohl für erste Lernschritte als auch für anspruchsvollere Experimente mit komplexeren, hierarchischen Schaltungen.",
+		"highlightsHeadline": "Highlights",
+		"technologiesHeadline": "Technologien",
+		"educationHeadline": "Bildung & Aufmerksamkeit",
+		"educationP1": "Das Projekt wurde in der Fachpresse vorgestellt – u. a. im IT‑Magazin c't (Ausgabe 15/2024). Darüber hinaus hat Logigator seinen Weg in Unterrichtsmaterialien und Schulbücher gefunden und unterstützt Lehrkräfte beim praxisnahen Vermitteln digitaler Logik. Die Kombination aus unmittelbarem Feedback und niedriger Einstiegshürde macht es ideal für Lernumgebungen und selbstgesteuertes Experimentieren.",
+		"educationP2": "Ich betreue die Plattform aktiv: Regelmäßige Wartung, Security‑Updates, gezielte Fehlerbehebungen und qualitative Verbesserungen sorgen für ein verlässlich stabiles Fundament. Nutzer profitieren von einem konsistenten Erlebnis und einer robusten Codebasis, auf deren Grundlage ich bedarfsorientiert neue Optimierungen und sinnvolle Erweiterungen einbringe.",
+		"links": {
+			"ct": {
+				"label": "c't Artikel (15/2024)",
+				"aria": "c't Artikel Ausgabe 15/2024 öffnen",
+				"href": "https://www.heise.de/select/ct/2024/15/2330613124168593542"
+			},
+			"schoolbook": {
+				"label": "Schulbuch: Informatik NRW 9/10",
+				"aria": "Schulbuch Informatik NRW 9/10 öffnen",
+				"href": "https://www.ccbuchner.de/produkt/informatik-nordrhein-westfalen-9-10-8592"
+			}
+		},
+		"actions": {
+			"website": {
+				"label": "Website",
+				"href": "https://logigator.com"
+			},
+			"github": {
+				"label": "GitHub",
+				"href": "https://github.com/logigator/logigator"
+			}
+		}
 	}
 }

@@ -1,26 +1,27 @@
 <script lang="ts">
 	import { Heading } from 'flowbite-svelte';
 	import Experiences, { type ExperienceEntry } from '$lib/components/experiences.svelte';
+	import { m } from '$lib/paraglide/messages';
 
 	const education: ExperienceEntry[] = [
 		{
-			company: 'Technische Universität Wien',
-			role: 'B.Sc. Informatics',
-			period: '2021 – 2025',
+			company: m['education.tuw.company'](),
+			role: m['education.tuw.role'](),
+			period: m['education.tuw.period'](),
 			initials: 'TUW',
-			description: 'Bachelor of Science (B.Sc.) in Informatics',
+			description: m['education.tuw.description'](),
 			badges: [{ label: 'Bachelor', color: 'primary' }]
 		},
 		{
-			company: 'HTL Rennweg',
-			role: 'Matura Information Technology',
-			period: '2015 – 2020',
+			company: m['education.htl.company'](),
+			role: m['education.htl.role'](),
+			period: m['education.htl.period'](),
 			initials: 'HTL',
-			description: 'Matura in Information Technology',
+			description: m['education.htl.description'](),
 			badges: [{ label: 'Matura', color: 'green' }]
 		}
 	];
 </script>
 
-<Heading tag="h2" class="mb-8">Ausbildung</Heading>
+<Heading tag="h2" class="mb-8">{m['education.headline']()}</Heading>
 <Experiences entries={education}></Experiences>

@@ -1,5 +1,6 @@
 import type { ComponentProps } from 'svelte';
 import { Badge } from 'flowbite-svelte';
+import { m } from '$lib/paraglide/messages';
 
 type Color = ComponentProps<typeof Badge>['color'];
 
@@ -9,22 +10,22 @@ export type TechnologyCategory = {
 
 export const technologyCategories = {
 	frontend: {
-		label: 'Frontend UI & Frameworks'
+		label: m['technologies.categories.frontend']({})
 	},
 	backend: {
-		label: 'Backend & APIs'
+		label: m['technologies.categories.backend']({})
 	},
 	devops: {
-		label: 'Cloud & Infrastructure'
+		label: m['technologies.categories.devops']({})
 	},
 	database: {
-		label: 'Data & Storage'
+		label: m['technologies.categories.database']({})
 	},
 	languages: {
-		label: 'Programming languages'
+		label: m['technologies.categories.languages']({})
 	},
 	sysadmin: {
-		label: 'Platform & OS'
+		label: m['technologies.categories.sysadmin']({})
 	}
 } satisfies Record<string, TechnologyCategory>;
 
@@ -42,35 +43,35 @@ export const technologies = {
 		category: 'backend',
 		label: 'NestJS',
 		color: 'red',
-		description: 'Structured scalable APIs',
+		description: m['technologies.descriptions.nestjs']({}),
 		icon: 'devicon-nestjs-original'
 	},
 	spring: {
 		category: 'backend',
 		label: 'Java Spring',
 		color: 'green',
-		description: 'Robust enterprise microservices',
+		description: m['technologies.descriptions.spring']({}),
 		icon: 'devicon-spring-original'
 	},
 	dotnet: {
 		category: 'backend',
 		label: '.NET / ASP.NET',
 		color: 'purple',
-		description: 'Cross-platform web power',
+		description: m['technologies.descriptions.dotnet']({}),
 		icon: 'devicon-dot-net-plain'
 	},
 	nodejs: {
 		category: 'backend',
 		label: 'Node.js',
 		color: 'green',
-		description: 'Fast server-side JavaScript',
+		description: m['technologies.descriptions.nodejs']({}),
 		icon: 'devicon-nodejs-plain'
 	},
 	graphql: {
 		category: 'backend',
 		label: 'GraphQL',
 		color: 'pink',
-		description: 'Efficient data fetching',
+		description: m['technologies.descriptions.graphql']({}),
 		icon: 'devicon-graphql-plain'
 	},
 
@@ -79,42 +80,42 @@ export const technologies = {
 		category: 'database',
 		label: 'PostgreSQL',
 		color: 'blue',
-		description: 'Reliable relational engine',
+		description: m['technologies.descriptions.postgresql']({}),
 		icon: 'devicon-postgresql-plain'
 	},
 	mysql: {
 		category: 'database',
 		label: 'MySQL',
 		color: 'amber',
-		description: 'Proven relational workhorse',
+		description: m['technologies.descriptions.mysql']({}),
 		icon: 'devicon-mysql-original'
 	},
 	mongodb: {
 		category: 'database',
 		label: 'MongoDB',
 		color: 'green',
-		description: 'Flexible document storage',
+		description: m['technologies.descriptions.mongodb']({}),
 		icon: 'devicon-mongodb-plain'
 	},
 	influx: {
 		category: 'database',
 		label: 'InfluxDB',
 		color: 'blue',
-		description: 'Time-series insights fast',
+		description: m['technologies.descriptions.influx']({}),
 		icon: 'devicon-influxdb-original'
 	},
 	zfs: {
 		category: 'database',
 		label: 'ZFS',
 		color: 'green',
-		description: 'Resilient storage management',
+		description: m['technologies.descriptions.zfs']({}),
 		icon: 'icon-zfs'
 	},
 	redis: {
 		category: 'database',
 		label: 'Redis',
 		color: 'red',
-		description: 'Blazing in-memory speed',
+		description: m['technologies.descriptions.redis']({}),
 		icon: 'devicon-redis-plain'
 	},
 
@@ -123,42 +124,42 @@ export const technologies = {
 		category: 'devops',
 		label: 'Docker & Kubernetes',
 		color: 'blue',
-		description: 'Portable scalable containers',
+		description: m['technologies.descriptions.docker']({}),
 		icon: 'devicon-docker-plain'
 	},
 	azure: {
 		category: 'devops',
 		label: 'Azure',
 		color: 'blue',
-		description: 'Enterprise cloud services',
+		description: m['technologies.descriptions.azure']({}),
 		icon: 'devicon-azure-plain'
 	},
 	ansible: {
 		category: 'devops',
 		label: 'Ansible',
 		color: 'red',
-		description: 'Simple automation at scale',
+		description: m['technologies.descriptions.ansible']({}),
 		icon: 'devicon-ansible-plain'
 	},
 	proxmox: {
 		category: 'devops',
 		label: 'Proxmox',
 		color: 'orange',
-		description: 'Efficient virtualization platform',
+		description: m['technologies.descriptions.proxmox']({}),
 		icon: 'devicon-proxmox-plain-wordmark'
 	},
 	prometheusGrafana: {
 		category: 'devops',
 		label: 'Prometheus & Grafana',
 		color: 'orange',
-		description: 'Actionable metrics monitoring',
+		description: m['technologies.descriptions.prometheusGrafana']({}),
 		icon: 'devicon-grafana-plain'
 	},
 	githubActions: {
 		category: 'devops',
 		label: 'GitHub Actions',
 		color: 'gray',
-		description: 'Streamlined CI/CD pipelines',
+		description: m['technologies.descriptions.githubActions']({}),
 		icon: 'devicon-githubactions-plain'
 	},
 
@@ -167,28 +168,28 @@ export const technologies = {
 		category: 'frontend',
 		label: 'Vue.js / Nuxt.js',
 		color: 'green',
-		description: 'Elegant progressive UI',
+		description: m['technologies.descriptions.vue']({}),
 		icon: 'devicon-vuejs-plain'
 	},
 	react: {
 		category: 'frontend',
 		label: 'React / Next.js',
 		color: 'blue',
-		description: 'Reusable component-driven UI',
+		description: m['technologies.descriptions.react']({}),
 		icon: 'devicon-react-original'
 	},
 	angular: {
 		category: 'frontend',
 		label: 'Angular',
 		color: 'red',
-		description: 'Full-featured enterprise frontend',
+		description: m['technologies.descriptions.angular']({}),
 		icon: 'devicon-angular-plain'
 	},
 	svelte: {
 		category: 'frontend',
 		label: 'Svelte / SvelteKit',
 		color: 'orange',
-		description: 'Lightning-fast compiled UI',
+		description: m['technologies.descriptions.svelte']({}),
 		icon: 'devicon-svelte-plain'
 	},
 
@@ -197,42 +198,42 @@ export const technologies = {
 		category: 'languages',
 		label: 'PHP',
 		color: 'primary',
-		description: 'Fast server-side web',
+		description: m['technologies.descriptions.php']({}),
 		icon: 'devicon-php-plain'
 	},
 	javascript: {
 		category: 'languages',
 		label: 'JavaScript',
 		color: 'yellow',
-		description: 'Universal web language',
+		description: m['technologies.descriptions.javascript']({}),
 		icon: 'devicon-javascript-plain'
 	},
 	typescript: {
 		category: 'languages',
 		label: 'TypeScript',
 		color: 'blue',
-		description: 'Safer scalable JavaScript',
+		description: m['technologies.descriptions.typescript']({}),
 		icon: 'devicon-typescript-plain'
 	},
 	java: {
 		category: 'languages',
 		label: 'Java',
 		color: 'orange',
-		description: 'Reliable cross-platform apps',
+		description: m['technologies.descriptions.java']({}),
 		icon: 'devicon-java-plain'
 	},
 	cpp: {
 		category: 'languages',
 		label: 'C / C++',
 		color: 'blue',
-		description: 'High-performance systems code',
+		description: m['technologies.descriptions.cpp']({}),
 		icon: 'devicon-cplusplus-plain'
 	},
 	csharp: {
 		category: 'languages',
 		label: 'C#',
 		color: 'purple',
-		description: 'Versatile Microsoft language',
+		description: m['technologies.descriptions.csharp']({}),
 		icon: 'devicon-csharp-plain'
 	},
 
@@ -241,21 +242,21 @@ export const technologies = {
 		category: 'sysadmin',
 		label: 'Linux',
 		color: 'primary',
-		description: 'Stable secure server OS',
+		description: m['technologies.descriptions.linux']({}),
 		icon: 'devicon-linux-plain'
 	},
 	bash: {
 		category: 'sysadmin',
 		label: 'Bash',
 		color: 'primary',
-		description: 'Automate with shell scripts',
+		description: m['technologies.descriptions.bash']({}),
 		icon: 'devicon-bash-plain'
 	},
 	opnsense: {
 		category: 'sysadmin',
 		label: 'pfSense / OPNsense',
 		color: 'red',
-		description: 'Powerful open firewall',
+		description: m['technologies.descriptions.opnsense']({}),
 		icon: 'devicon-pfsense-original'
 	},
 
@@ -264,14 +265,14 @@ export const technologies = {
 		category: 'sysadmin',
 		label: 'Active Directory',
 		color: 'blue',
-		description: 'Centralized identity management',
+		description: m['technologies.descriptions.activeDirectory']({}),
 		icon: 'devicon-windows11-original'
 	},
 	powershell: {
 		category: 'sysadmin',
 		label: 'PowerShell',
 		color: 'blue',
-		description: 'Scriptable admin automation',
+		description: m['technologies.descriptions.powershell']({}),
 		icon: 'devicon-powershell-plain'
 	}
 } satisfies Record<string, Technology>;

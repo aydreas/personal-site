@@ -1,42 +1,48 @@
 <script lang="ts">
 	import { Card, Heading, Li, List } from 'flowbite-svelte';
+	import { m } from '$lib/paraglide/messages';
 
 	const services = [
 		{
-			title: 'Softwareentwicklung & Automatisierung',
-			points: ['Individuelle Anwendungen', 'API-Integrationen', 'Skripte', 'Prozessoptimierungen']
-		},
-		{
-			title: 'Systemadministration & Infrastruktur',
+			title: m['servicesContent.software.title'](),
 			points: [
-				'Betreuung bestehender Systeme',
-				'Monitoring',
-				'Security-Checks',
-				'Cloud-Einrichtung (AWS/Azure/GCP)',
-				'Containerisierung',
-				'CI/CD'
+				m['servicesContent.software.p1'](),
+				m['servicesContent.software.p2'](),
+				m['servicesContent.software.p3'](),
+				m['servicesContent.software.p4']()
 			]
 		},
 		{
-			title: 'IT-Consulting & Architekturberatung',
+			title: m['servicesContent.admin.title'](),
 			points: [
-				'Technische Entscheidungsbegleitung',
-				'Evaluierung neuer Tools',
-				'Modernisierung bestehender Systeme'
+				m['servicesContent.admin.p1'](),
+				m['servicesContent.admin.p2'](),
+				m['servicesContent.admin.p3'](),
+				m['servicesContent.admin.p4'](),
+				m['servicesContent.admin.p5'](),
+				m['servicesContent.admin.p6']()
 			]
 		},
 		{
-			title: 'Support & Troubleshooting',
+			title: m['servicesContent.consulting.title'](),
 			points: [
-				'Schnelle Problemlösungen Remote oder vor Ort',
-				'Fehlersuche',
-				'Stabilisierung von Systemen'
+				m['servicesContent.consulting.p1'](),
+				m['servicesContent.consulting.p2'](),
+				m['servicesContent.consulting.p3']()
+			]
+		},
+		{
+			title: m['servicesContent.support.title'](),
+			points: [
+				m['servicesContent.support.p1'](),
+				m['servicesContent.support.p2'](),
+				m['servicesContent.support.p3']()
 			]
 		}
 	];
 </script>
 
-<Heading tag="h2" class="mb-8">Meine Kernleistungen</Heading>
+<Heading tag="h2" class="mb-8">{m['servicesContent.headline']()}</Heading>
 <div class="grid gap-8 md:grid-cols-2">
 	{#each services as s (s.title)}
 		<Card size="xl" class="p-8">

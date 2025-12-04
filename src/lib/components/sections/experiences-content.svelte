@@ -1,14 +1,15 @@
 <script lang="ts">
 	import { Heading } from 'flowbite-svelte';
 	import Experiences, { type ExperienceEntry } from '$lib/components/experiences.svelte';
+	import { m } from '$lib/paraglide/messages';
 
 	const experiences: ExperienceEntry[] = [
 		{
-			company: 'Self Employed',
-			role: 'Independent IT Consultant & Developer',
-			period: 'Oct 2025 – Present',
+			company: m['experiences.SE.company'](),
+			role: m['experiences.SE.role'](),
+			period: m['experiences.SE.period'](),
 			initials: 'SE',
-			description: 'Providing freelance IT consulting and software development services',
+			description: m['experiences.SE.description'](),
 			badges: [
 				'typescript',
 				'java',
@@ -31,15 +32,15 @@
 			]
 		},
 		{
-			company: 'Bitberry',
-			role: 'DevOps Technical Lead',
-			period: 'Apr 2023 – Oct 2025',
-			location: 'Vienna, Austria',
+			company: m['experiences.BBLead.company'](),
+			role: m['experiences.BBLead.role'](),
+			period: m['experiences.BBLead.period'](),
+			location: m['experiences.BBLead.location'](),
 			initials: 'BB',
 			details: [
-				'Led design, implementation and maintenance of CI/CD pipelines',
-				'Improved code quality and deployment workflows',
-				'Managed development and production infrastructure'
+				m['experiences.BBLead.details.1'](),
+				m['experiences.BBLead.details.2'](),
+				m['experiences.BBLead.details.3']()
 			],
 			badges: [
 				'docker',
@@ -55,12 +56,12 @@
 			]
 		},
 		{
-			company: 'Bitberry',
-			role: 'Full Stack Engineer',
-			period: 'Sep 2021 – Oct 2025',
-			location: 'Vienna, Austria',
+			company: m['experiences.BBDev.company'](),
+			role: m['experiences.BBDev.role'](),
+			period: m['experiences.BBDev.period'](),
+			location: m['experiences.BBDev.location'](),
 			initials: 'BB',
-			details: ['Developed and designed software projects'],
+			details: [m['experiences.BBDev.details.1']()],
 			badges: [
 				'javascript',
 				'typescript',
@@ -79,24 +80,21 @@
 			]
 		},
 		{
-			company: 'Corestad',
-			role: 'Software Engineer',
-			period: 'Jun 2021 – Aug 2021',
-			location: 'Vienna, Austria',
+			company: m['experiences.CS.company'](),
+			role: m['experiences.CS.role'](),
+			period: m['experiences.CS.period'](),
+			location: m['experiences.CS.location'](),
 			initials: 'CS',
-			details: ['Developed web applications and advised on server infrastructure'],
+			details: [m['experiences.CS.details.1']()],
 			badges: ['nodejs', 'vue', 'mongodb', 'mysql', 'docker', 'linux', 'graphql']
 		},
 		{
-			company: 'NAVAX',
-			role: 'IT-Administrator',
-			period: 'Aug 2018 – Dec 2020',
-			location: 'Vienna, Austria',
+			company: m['experiences.NXAdmin.company'](),
+			role: m['experiences.NXAdmin.role'](),
+			period: m['experiences.NXAdmin.period'](),
+			location: m['experiences.NXAdmin.location'](),
 			initials: 'NX',
-			details: [
-				'Administered Windows, Linux and Microsoft 365 environments',
-				'Built internal tools to improve infrastructure efficiency'
-			],
+			details: [m['experiences.NXAdmin.details.1'](), m['experiences.NXAdmin.details.2']()],
 			badges: [
 				'azure',
 				'activeDirectory',
@@ -111,25 +109,25 @@
 			]
 		},
 		{
-			company: 'NAVAX',
-			role: 'Information Technology Intern',
-			period: 'Jul 2018',
-			location: 'Vienna, Austria',
+			company: m['experiences.NXIntern.company'](),
+			role: m['experiences.NXIntern.role'](),
+			period: m['experiences.NXIntern.period'](),
+			location: m['experiences.NXIntern.location'](),
 			initials: 'NX',
-			description: 'Short-term IT department internship',
+			description: m['experiences.NXIntern.description'](),
 			badges: ['activeDirectory', 'powershell', 'linux', 'javascript']
 		},
 		{
-			company: 'Buchhaltungsagentur des Bundes',
-			role: 'Information Technology Intern',
-			period: 'Aug 2018',
-			location: 'Vienna, Austria',
+			company: m['experiences.BDBIntern.company'](),
+			role: m['experiences.BDBIntern.role'](),
+			period: m['experiences.BDBIntern.period'](),
+			location: m['experiences.BDBIntern.location'](),
 			initials: 'BDB',
-			description: 'Short-term IT department internship',
+			description: m['experiences.BDBIntern.description'](),
 			badges: ['activeDirectory', 'powershell', 'javascript']
 		}
 	];
 </script>
 
-<Heading tag="h2" class="mb-8">Beruflicher Werdegang</Heading>
+<Heading tag="h2" class="mb-8">{m['experiences.headline']()}</Heading>
 <Experiences entries={experiences}></Experiences>
