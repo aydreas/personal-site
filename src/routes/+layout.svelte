@@ -1,5 +1,5 @@
 <script lang="ts">
-	import { locales, localizeHref, getLocale, setLocale } from '$lib/paraglide/runtime';
+	import { locales, localizeHref } from '$lib/paraglide/runtime';
 	import { page } from '$app/state';
 	import {
 		DarkMode,
@@ -8,20 +8,15 @@
 		FooterLinkGroup,
 		FooterLink,
 		Navbar,
-		NavBrand,
-		Select
+		NavBrand
 	} from 'flowbite-svelte';
+	import LanguageSelector from '$lib/components/language-selector.svelte';
 	import '../app.css';
 	import favicon from '$lib/assets/favicon.svg';
 
 	let { children } = $props();
 
-	const languages = [
-		{ value: 'en', name: 'English' },
-		{ value: 'de', name: 'Deutsch' }
-	];
 
-	let selectedLanguage = $state(getLocale());
 </script>
 
 <svelte:head>
@@ -39,11 +34,7 @@
 <Navbar>
 	<NavBrand href="/">Andreas Schlößl</NavBrand>
 	<div class="flex gap-4">
-		<Select
-			items={languages}
-			bind:value={selectedLanguage}
-			onchange={() => setLocale(selectedLanguage)}
-		></Select>
+		<LanguageSelector></LanguageSelector>
 		<DarkMode></DarkMode>
 	</div>
 </Navbar>

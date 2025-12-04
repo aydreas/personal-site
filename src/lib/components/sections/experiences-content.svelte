@@ -1,21 +1,8 @@
 <script lang="ts">
-	import { Avatar, Badge, Heading, Li, List, P, Timeline, TimelineItem } from 'flowbite-svelte';
-	import { technologies } from '$lib/technologies';
+	import { Heading } from 'flowbite-svelte';
+	import Experiences, { type ExperienceEntry } from '$lib/components/experiences.svelte';
 
-	type Entry = {
-		company?: string; // institution for education
-		institution?: string; // alt field for education
-		role?: string;
-		degree?: string;
-		period: string; // displayed in date
-		location?: string;
-		initials: string; // placeholder logo text
-		details?: string[]; // bullet points
-		description?: string; // single paragraph
-		badges?: (keyof typeof technologies)[];
-	};
-
-	const experience: Entry[] = [
+	const experiences: ExperienceEntry[] = [
 		{
 			company: 'Self Employed',
 			role: 'Independent IT Consultant & Developer',
@@ -142,36 +129,7 @@
 			badges: ['activeDirectory', 'powershell', 'javascript']
 		}
 	];
-
-	function buildExperienceTitle(e: Entry) {
-		return `${e.role} · ${e.company}${e.location ? ` (${e.location})` : ''}`;
-	}
-
-	function getBadges(e: Entry) {
-		return e.badges?.map((b) => technologies[b]);
-	}
 </script>
 
 <Heading tag="h2" class="mb-8">Beruflicher Werdegang</Heading>
-<Timeline>
-	{#each experience as e (e.period)}
-		<TimelineItem date={e.period} title={buildExperienceTitle(e)}>
-			<div class="flex gap-4 mt-2">
-				<Avatar class="shrink-0 bg-gray-300" border>{e.initials}</Avatar>
-				<div class="grow">
-					{#if e.details}
-						<List class="list-disc ml-5 space-y-1">
-							{#each e.details as d (d)}<Li>{d}</Li>{/each}
-						</List>
-					{/if}
-					{#if e.description}<P class="mb-2">{e.description}</P>{/if}
-					<div class="mt-3 flex flex-wrap gap-2">
-						{#each getBadges(e) as b (b)}
-							<Badge color={b.color}>{b.label}</Badge>
-						{/each}
-					</div>
-				</div>
-			</div>
-		</TimelineItem>
-	{/each}
-</Timeline>
+<Experiences entries={experiences}></Experiences>

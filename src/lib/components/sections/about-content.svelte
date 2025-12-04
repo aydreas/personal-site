@@ -1,28 +1,16 @@
 <script lang="ts">
 	import { Heading, P } from 'flowbite-svelte';
+	import { m } from '$lib/paraglide/messages';
 	import Avatar from '$lib/components/avatar.svelte';
-
 	import portrait from '$lib/assets/images/portrait_512.webp';
 </script>
 
-<Heading tag="h2" class="mb-8">Über mich</Heading>
+<Heading tag="h2" class="mb-8">{m['aboutContent.headline']()}</Heading>
 <div class="flex flex-col items-center gap-8 lg:flex-row lg:items-start">
 	<Avatar initials="AS" src={portrait} size="6xl"></Avatar>
 	<div class="space-y-4">
-		<P>
-			Ich bin leidenschaftlicher Softwareentwickler und IT-Spezialist mit Fokus auf robuste
-			Webanwendungen, Cloud-Infrastruktur und Automatisierung. In meiner täglichen Arbeit verbinde
-			ich Entwicklung und Betrieb, um skalierbare Systeme mit klarer Architektur und effizienter
-			Delivery zu schaffen.
-		</P>
-		<P>
-			Besonders wichtig sind mir pragmatische Lösungen, saubere Codebasis und nachvollziehbare
-			Prozesse. Ich arbeite gerne eng mit Teams zusammen, identifiziere Engpässe und setze
-			Verbesserungen um, die langfristig Wartbarkeit und Geschwindigkeit erhöhen.
-		</P>
-		<P>
-			Außerhalb von Kundenprojekten experimentiere ich mit neuen Technologien, optimiere
-			DevOps-Workflows und erweitere mein Wissen in Sicherheits- und Performancefragen.
-		</P>
+		<P>{m['aboutContent.paragraph1']()}</P>
+		<P>{m['aboutContent.paragraph2']()}</P>
+		<P>{m['aboutContent.paragraph3']()}</P>
 	</div>
 </div>

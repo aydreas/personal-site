@@ -1,4 +1,13 @@
 {
 	"$schema": "https://inlang.com/schema/inlang-message-format",
-	"hello_world": "Hello, {name} from de!"
+	"heroContent": {
+		"headline": "Flexibler IT-Dienstleister für Entwicklung & Infrastruktur",
+		"paragraph": "Ich unterstütze Unternehmen als flexibler IT-Dienstleister mit Fokus auf Softwareentwicklung, Systemadministration und technischer Beratung. Ob Entwicklung von Anwendungen, Aufbau moderner Cloud-Infrastrukturen oder zuverlässiger IT-Support – ich liefere pragmatische, skalierbare Lösungen, die direkt im Tagesgeschäft spürbar helfen. Ich arbeite auf Stunden- oder Projektbasis, ermögliche schnelle Reaktionszeiten und passe mich exakt den Anforderungen deines Unternehmens an. Für Startups, KMU und bestehende IT-Teams bin ich ein zuverlässiger Partner, der sowohl kurzfristige Engpässe überbrückt als auch langfristige technische Weiterentwicklung unterstützt."
+	},
+	"aboutContent": {
+		"headline": "Über mich",
+		"paragraph1": "Ich bin leidenschaftlicher Softwareentwickler und IT-Spezialist mit Fokus auf robuste Webanwendungen, Cloud-Infrastruktur und Automatisierung. In meiner täglichen Arbeit verbinde ich Entwicklung und Betrieb, um skalierbare Systeme mit klarer Architektur und effizienter Delivery zu schaffen.",
+		"paragraph2": "Besonders wichtig sind mir pragmatische Lösungen, saubere Codebasis und nachvollziehbare Prozesse. Ich arbeite gerne eng mit Teams zusammen, identifiziere Engpässe und setze Verbesserungen um, die langfristig Wartbarkeit und Geschwindigkeit erhöhen.",
+		"paragraph3": "Außerhalb von Kundenprojekten experimentiere ich mit neuen Technologien, optimiere DevOps-Workflows und erweitere mein Wissen in Sicherheits- und Performancefragen."
+	}
 }

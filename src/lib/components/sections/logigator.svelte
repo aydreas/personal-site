@@ -19,9 +19,16 @@
 	<div class="flex flex-col md:flex-row md:items-center gap-6">
 		<div class="flex flex-wrap md:flex-nowrap items-center gap-4">
 			<img
+				src="https://logigator.com/assets/logo.svg"
+				alt="Logigator Logo"
+				class="dark:hidden block w-48 h-12"
+				loading="lazy"
+			/>
+			<img
 				src="https://logigator.com/assets/logo_light.svg"
 				alt="Logigator Logo"
-				class="w-48 h-12"
+				class="hidden dark:block w-48 h-12"
+				loading="lazy"
 			/>
 			<Heading tag="h3">Logigator: Digitale Logik einfach lernen & anwenden</Heading>
 		</div>
