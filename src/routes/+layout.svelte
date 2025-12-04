@@ -13,12 +13,63 @@
 	import LanguageSelector from '$lib/components/language-selector.svelte';
 	import '../app.css';
 	import favicon from '$lib/assets/favicon.svg';
+	import portrait from '$lib/assets/images/portrait_512.webp';
 
 	let { children } = $props();
+
+	// Basic SEO constants
+	const SITE_NAME = 'Andreas Schlößl';
+	const TITLE = 'Andreas Schlößl - Software Engineer';
+	const DESCRIPTION =
+		'Software engineer specializing in TypeScript, Svelte, and building reliable, accessible web apps. Explore projects, experience, and services.';
+	const THEME_COLOR = '#314158'; // Tailwind slate-700
 </script>
 
 <svelte:head>
-	<title>Andreas Schlößl - Software Engineer</title>
+	<title>{TITLE}</title>
+	<link rel="icon" href={favicon} />
+
+	<!-- Basic meta -->
+	<meta name="description" content={DESCRIPTION} />
+	<meta name="author" content={SITE_NAME} />
+	<meta name="theme-color" content={THEME_COLOR} />
+	<meta
+		name="keywords"
+		content="Software Engineer, IT Infrastructure, Automation, Webdev, Consulting"
+	/>
+
+	<!-- Canonical URL -->
+	<link rel="canonical" href={`${page.url.origin}${page.url.pathname}`} />
+
+	<!-- hreflang alternates for i18n -->
+	{#each locales as locale (locale)}
+		<link
+			rel="alternate"
+			hreflang={locale}
+			href={`${page.url.origin}${localizeHref(page.url.pathname, { locale })}`}
+		/>
+	{/each}
+	<!-- x-default fallback -->
+	<link rel="alternate" hreflang="x-default" href={`${page.url.origin}${page.url.pathname}`} />
+
+	<!-- Open Graph -->
+	<meta property="og:type" content="website" />
+	<meta property="og:site_name" content={SITE_NAME} />
+	<meta property="og:title" content={TITLE} />
+	<meta property="og:description" content={DESCRIPTION} />
+	<meta property="og:url" content={`${page.url.origin}${page.url.pathname}`} />
+	<!-- If you have a social share image, set it here; uses portrait as a fallback -->
+	<meta property="og:image" content={portrait} />
+	<meta property="og:image:alt" content="Portrait of Andreas Schlößl" />
+
+	<!-- Twitter Card -->
+	<meta name="twitter:card" content="summary_large_image" />
+	<meta name="twitter:title" content={TITLE} />
+	<meta name="twitter:description" content={DESCRIPTION} />
+	<meta name="twitter:image" content={portrait} />
+
+	<!-- Robots -->
+	<meta name="robots" content="index,follow" />
 </svelte:head>
 
 <div style="display:none">
@@ -27,7 +78,6 @@
 		<a href={localizeHref(page.url.pathname, { locale })}>{locale}</a>
 	{/each}
 </div>
-<link rel="icon" href={favicon} />
 
 <Navbar>
 	<NavBrand href="/">Andreas Schlößl</NavBrand>
