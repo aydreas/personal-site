@@ -10,8 +10,5 @@
 	let selectedLanguage = $state(getLocale());
 </script>
 
-<Select
-	items={languages}
-	bind:value={selectedLanguage}
-	onchange={() => setLocale(selectedLanguage)}
+<Select items={languages} bind:value={selectedLanguage} onchange={() => setLocale(selectedLanguage)}
 ></Select>

@@ -68,13 +68,13 @@
 			<A
 				href={m['logigator.links.ct.href']()}
 				target="_blank"
-				rel="noopener noreferrer"
+				rel="noopener noreferrer external"
 				aria-label={m['logigator.links.ct.aria']()}>{m['logigator.links.ct.label']()}</A
 			>
 			<A
 				href={m['logigator.links.schoolbook.href']()}
 				target="_blank"
-				rel="noopener noreferrer"
+				rel="noopener noreferrer external"
 				aria-label={m['logigator.links.schoolbook.aria']()}
 				>{m['logigator.links.schoolbook.label']()}</A
 			>
@@ -86,14 +86,14 @@
 		<Button
 			tag="a"
 			href={m['logigator.actions.website.href']()}
-			rel="noopener noreferrer"
+			rel="noopener noreferrer external"
 			target="_blank"
 			color="primary">{m['logigator.actions.website.label']()}</Button
 		>
 		<Button
 			tag="a"
 			href={m['logigator.actions.github.href']()}
-			rel="noopener noreferrer"
+			rel="noopener noreferrer external"
 			target="_blank"
 			color="light">{m['logigator.actions.github.label']()}</Button
 		>

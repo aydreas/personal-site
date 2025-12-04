@@ -8,7 +8,7 @@
 <Button
 	href={linkedinUrl}
 	target="_blank"
-	rel="noopener noreferrer"
+	rel="noopener noreferrer external"
 	color="primary"
 	class="flex items-center"
 >
@@ -23,7 +23,7 @@
 <Button
 	href={githubUrl}
 	target="_blank"
-	rel="noopener noreferrer"
+	rel="noopener noreferrer external"
 	color="light"
 	class="flex items-center"
 >
