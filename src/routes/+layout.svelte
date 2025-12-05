@@ -93,7 +93,7 @@
 		<DarkMode></DarkMode>
 	</div>
 </Navbar>
-{@render children()}
+<main>{@render children()}</main>
 <Footer>
 	<FooterCopyright></FooterCopyright>
 	<FooterLinkGroup>

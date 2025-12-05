@@ -1,6 +1,7 @@
 <script lang="ts">
 	import { getLocale, setLocale } from '$lib/paraglide/runtime';
-	import { Select } from 'flowbite-svelte';
+	import { Select, Label } from 'flowbite-svelte';
+	import { m } from '$lib/paraglide/messages';
 
 	const languages = [
 		{ value: 'en', name: 'English' },
@@ -10,5 +11,13 @@
 	let selectedLanguage = $state(getLocale());
 </script>
 
-<Select items={languages} bind:value={selectedLanguage} onchange={() => setLocale(selectedLanguage)}
-></Select>
+<Label>
+	<span class="sr-only">{m['languageSelector.label']()}</span>
+	<Select
+		class="w-42"
+		placeholder={m['languageSelector.placeholder']()}
+		items={languages}
+		bind:value={selectedLanguage}
+		onchange={() => setLocale(selectedLanguage)}
+	></Select>
+</Label>
