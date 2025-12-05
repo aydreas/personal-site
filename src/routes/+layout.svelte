@@ -29,6 +29,13 @@
 	<title>{TITLE}</title>
 	<link rel="icon" href={favicon} />
 
+	<link rel="preconnect" href="https://fonts.googleapis.com" />
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="anonymous" />
+	<link
+		href="https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100..900;1,100..900&display=swap"
+		rel="stylesheet"
+	/>
+
 	<!-- Basic meta -->
 	<meta name="description" content={DESCRIPTION} />
 	<meta name="author" content={SITE_NAME} />
@@ -90,6 +97,6 @@
 <Footer>
 	<FooterCopyright></FooterCopyright>
 	<FooterLinkGroup>
-		<FooterLink href="/">Impressum</FooterLink>
+		<FooterLink href="/impressum">Impressum</FooterLink>
 	</FooterLinkGroup>
 </Footer>

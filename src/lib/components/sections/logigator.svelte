@@ -3,6 +3,8 @@
 	import type { ComponentProps } from 'svelte';
 	import TechTag from '$lib/components/tech-tag.svelte';
 	import { m } from '$lib/paraglide/messages.js';
+	import logigatorLogo from '$lib/assets/images/logigator.svg';
+	import logigatorLightLogo from '$lib/assets/images/logigator_light.svg';
 
 	const features: { label: string; color?: ComponentProps<typeof Badge>['color'] }[] = [
 		{ label: 'Interaktive Logiksimulation', color: 'primary' },
@@ -20,13 +22,13 @@
 	<div class="flex flex-col md:flex-row md:items-center gap-6">
 		<div class="flex flex-wrap md:flex-nowrap items-center gap-4">
 			<img
-				src="https://logigator.com/assets/logo.svg"
+				src={logigatorLogo}
 				alt="Logigator Logo"
 				class="dark:hidden block w-48 h-12"
 				loading="lazy"
 			/>
 			<img
-				src="https://logigator.com/assets/logo_light.svg"
+				src={logigatorLightLogo}
 				alt="Logigator Logo"
 				class="hidden dark:block w-48 h-12"
 				loading="lazy"

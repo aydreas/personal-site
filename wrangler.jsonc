@@ -1,8 +1,8 @@
 {
-  "$schema": "./node_modules/wrangler/config-schema.json",
-  "name": "personal-site",
-  "compatibility_date": "2025-12-01",
-  "assets": {
-    "directory": "./build"
-  }
+	"$schema": "./node_modules/wrangler/config-schema.json",
+	"name": "personal-site",
+	"compatibility_date": "2025-12-01",
+	"assets": {
+		"directory": "./build"
+	}
 }
