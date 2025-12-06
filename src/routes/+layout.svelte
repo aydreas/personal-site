@@ -86,7 +86,7 @@
 	{/each}
 </div>
 
-<Navbar>
+<Navbar class="px-0 sm:px-0" navContainerClass="px-4 md:px-8">
 	<NavBrand href="/">Andreas Schlößl</NavBrand>
 	<div class="flex gap-4">
 		<LanguageSelector></LanguageSelector>
