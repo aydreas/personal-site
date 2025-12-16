@@ -1,3 +1,277 @@
 {
-	"$schema": "https://inlang.com/schema/inlang-message-format"
+	"$schema": "https://inlang.com/schema/inlang-message-format",
+	"languageSelector": {
+		"label": "Language",
+		"placeholder": "Select language..."
+	},
+	"heroContent": {
+		"headline": "Flexible IT service provider for development & infrastructure",
+		"paragraph": "I support companies as a flexible IT service provider focused on software development, system administration and technical consulting. Whether it's building applications, setting up modern cloud infrastructures or reliable IT support — I deliver pragmatic, scalable solutions that make a tangible difference in day-to-day operations. I work on an hourly or project basis, enable quick response times and adapt precisely to your company's needs. For startups, SMEs and existing IT teams, I'm a reliable partner who bridges short-term bottlenecks and supports long-term technical evolution.",
+		"button_contact": "Get in touch",
+		"button_cv": "CV"
+	},
+	"aboutContent": {
+		"headline": "About me",
+		"paragraph1": "I'm a passionate software developer and IT specialist focused on robust web applications, cloud and on‑prem infrastructure, and automation. In my daily work I bridge development and operations to build scalable systems with clear architecture and efficient delivery.",
+		"paragraph2": "I care about pragmatic solutions, a clean codebase, and transparent processes. I enjoy working closely with teams, identifying bottlenecks, and implementing improvements that increase maintainability and speed over the long term.",
+		"paragraph3": "Outside client projects, I run a private Proxmox cluster and build and maintain my own projects. In both hardware and software, I continuously try new technologies and work on developing my skills deliberately."
+	},
+	"servicesContent": {
+		"headline": "Core services",
+		"software": {
+			"title": "Software development & automation",
+			"p1": "Custom applications",
+			"p2": "API integrations",
+			"p3": "Scripts",
+			"p4": "Process optimizations"
+		},
+		"admin": {
+			"title": "System administration & infrastructure",
+			"p1": "Managing existing systems",
+			"p2": "Monitoring",
+			"p3": "Security checks",
+			"p4": "Cloud setup (AWS/Azure/GCP)",
+			"p5": "Containerization",
+			"p6": "CI/CD"
+		},
+		"consulting": {
+			"title": "IT consulting & architecture advisory",
+			"p1": "Support for technical decisions",
+			"p2": "Evaluation of new tools",
+			"p3": "Modernization of existing systems"
+		},
+		"support": {
+			"title": "Support & troubleshooting",
+			"p1": "Quick fixes remotely or on‑site",
+			"p2": "Troubleshooting",
+			"p3": "Stabilizing systems"
+		}
+	},
+	"technologies": {
+		"categories": {
+			"frontend": "Frontend UI & frameworks",
+			"backend": "Backend & APIs",
+			"devops": "Cloud & infrastructure",
+			"database": "Data & storage",
+			"languages": "Programming languages",
+			"sysadmin": "Platform & operating systems"
+		},
+		"descriptions": {
+			"nestjs": "Structured, scalable APIs",
+			"spring": "Robust enterprise microservices",
+			"dotnet": "Cross‑platform web development",
+			"nodejs": "Fast server‑side JavaScript",
+			"graphql": "Efficient data fetching",
+
+			"postgresql": "Reliable relational engine",
+			"mysql": "Proven relational workhorse",
+			"mongodb": "Flexible document storage",
+			"influx": "Fast time‑series analytics",
+			"zfs": "Resilient storage management",
+			"redis": "Blazing‑fast in‑memory cache",
+
+			"docker": "Portable, scalable containers",
+			"azure": "Enterprise cloud services",
+			"ansible": "Simple large‑scale automation",
+			"proxmox": "Efficient virtualization platform",
+			"prometheusGrafana": "Actionable monitoring",
+			"githubActions": "Simplified CI/CD pipelines",
+
+			"vue": "Elegant, progressive UI",
+			"react": "Reusable, component‑driven UI",
+			"angular": "Full‑featured enterprise front‑end",
+			"svelte": "Blazing‑fast compiled UI",
+
+			"php": "Fast server‑side web",
+			"javascript": "Universal web language",
+			"typescript": "Safer, scalable JavaScript",
+			"java": "Reliable cross‑platform applications",
+			"cpp": "High‑performance system code",
+			"csharp": "Versatile Microsoft language",
+
+			"linux": "Stable, secure server OS",
+			"bash": "Automation with shell scripts",
+			"opnsense": "Powerful open‑source firewall",
+			"activeDirectory": "Centralized identity management",
+			"powershell": "Scriptable admin automation"
+		}
+	},
+	"callToAction": {
+		"headline": "Ready for the next step?",
+		"paragraph": "Let's have an informal chat about your current challenge — often a brief exchange is enough to find clear first approaches.",
+		"button": "Make an inquiry"
+	},
+	"education": {
+		"headline": "Education",
+		"tuw": {
+			"company": "Vienna University of Technology",
+			"role": "B.Sc. Computer Science",
+			"period": "2021 – 2025",
+			"description": "Bachelor of Science (B.Sc.) in Computer Science"
+		},
+		"htl": {
+			"company": "HTL Rennweg",
+			"role": "Matura",
+			"period": "2015 – 2020",
+			"description": "Matura in Information Technology"
+		}
+	},
+	"experiences": {
+		"headline": "Professional experience",
+		"SE": {
+			"company": "Self‑employed",
+			"role": "Independent IT consultant & developer",
+			"period": "Oct. 2025 – Present",
+			"description": "Freelance IT consulting and software development"
+		},
+		"BBLead": {
+			"company": "Bitberry",
+			"role": "DevOps Technical Lead",
+			"period": "Apr. 2023 – Oct. 2025",
+			"location": "Vienna, Austria",
+			"details": {
+				"1": "Concept, implementation and maintenance of CI/CD pipelines",
+				"2": "Improved code quality and deployment workflows",
+				"3": "Responsibility for development and production infrastructure"
+			}
+		},
+		"BBDev": {
+			"company": "Bitberry",
+			"role": "Full‑stack developer",
+			"period": "Sep. 2021 – Oct. 2025",
+			"location": "Vienna, Austria",
+			"details": {
+				"1": "Developed and designed software projects",
+				"2": "Led refactorings to improve code quality, test coverage and maintainability (linting, type safety)",
+				"3": "Worked closely with clients to efficiently shape and deliver solutions"
+			}
+		},
+		"CS": {
+			"company": "Corestad",
+			"role": "Software Engineer",
+			"period": "Jun. 2021 – Aug. 2021",
+			"location": "Vienna, Austria",
+			"details": {
+				"1": "Developed web applications and provided operational support for server infrastructure",
+				"2": "Implemented software projects for external clients and supported technical tasks (feature development, bug fixes, reviews)"
+			}
+		},
+		"NXAdmin": {
+			"company": "NAVAX",
+			"role": "IT Administrator",
+			"period": "Aug. 2018 – Dec. 2020",
+			"location": "Vienna, Austria",
+			"details": {
+				"1": "Administered Windows, Linux and Microsoft 365 environments",
+				"2": "Built internal tools to increase infrastructure efficiency"
+			}
+		},
+		"NXIntern": {
+			"company": "NAVAX",
+			"role": "IT Intern",
+			"period": "Jul. 2018",
+			"location": "Vienna, Austria",
+			"description": "Short-term internship in the IT department"
+		},
+		"BDBIntern": {
+			"company": "Buchhaltungsagentur des Bundes",
+			"role": "IT Intern",
+			"period": "Aug. 2018",
+			"location": "Vienna, Austria",
+			"description": "Short-term internship in the IT department"
+		}
+	},
+	"logigator": {
+		"headline": "Sometimes personal projects tell the best stories",
+		"title": "Logigator: Learn and apply digital logic with ease",
+		"intro": "Logigator is an open platform I developed for designing and simulating digital logic circuits directly in the browser. It combines an intuitive editor with a fast real‑time simulation and is suitable both for first learning steps and for more demanding experiments with more complex, hierarchical circuits.",
+		"highlightsHeadline": "Highlights",
+		"technologiesHeadline": "Technologies",
+		"educationHeadline": "Education & recognition",
+		"educationP1": "The project has been covered in the tech press — including the IT magazine c't (issue 15/2024). In addition, Logigator has found its way into teaching materials and school books, supporting teachers in hands‑on instruction of digital logic. The combination of immediate feedback and a low barrier to entry makes it ideal for learning environments and self‑directed experimentation.",
+		"educationP2": "I actively maintain the platform: regular maintenance, security updates, targeted bug fixes and quality improvements provide a reliably stable foundation. Users benefit from a consistent experience and a robust codebase on top of which I add need‑driven optimizations and meaningful enhancements.",
+		"highlights": {
+			"interactive": "Interactive logic simulation",
+			"editor": "WebGL circuit editor with drag & drop",
+			"hierarchical": "Hierarchical blocks / ICs",
+			"share": "Share projects & collaborate",
+			"simulation": "High‑performance simulation in C++",
+			"openSource": "Open source & free"
+		},
+		"links": {
+			"ct": {
+				"label": "c't article (15/2024)",
+				"aria": "Open c't article issue 15/2024",
+				"href": "https://www.heise.de/select/ct/2024/15/2330613124168593542"
+			},
+			"schoolbook": {
+				"label": "Textbook: Informatics NRW 9/10",
+				"aria": "Open textbook Informatics NRW 9/10",
+				"href": "https://www.ccbuchner.de/produkt/informatik-nordrhein-westfalen-9-10-8592"
+			}
+		},
+		"actions": {
+			"website": {
+				"label": "Website",
+				"href": "https://logigator.com"
+			},
+			"github": {
+				"label": "GitHub",
+				"href": "https://github.com/logigator/logigator"
+			}
+		}
+	},
+	"proxmoxCluster": {
+		"title": "My homelab: Proxmox virtualization",
+		"introP1": "I operate a self‑hosted home infrastructure lab that closely resembles a small production environment. It is built around a Proxmox cluster with two nodes and an external QDevice to maintain quorum, running high‑availability virtual machines and containers with replication and automated failover. Network traffic for both home and virtualized workloads is handled by a virtualized OPNsense firewall, using VLAN‑based segmentation, policy‑based routing, and traffic shaping for isolation and control.",
+		"introP2": "The storage backend manages over 400 TB of data using ZFS and LVM, including redundancy, caching layers, and cold spares. Data protection follows a 3‑2‑1 backup strategy with automated, encrypted offsite backups. The entire environment is monitored using Grafana and InfluxDB, providing metrics and alerts for critical failure conditions. Infrastructure provisioning is largely automated with Ansible and cloud‑init, and multiple Kubernetes clusters are used to run both private services and public‑facing workloads, like Logigator.",
+		"highlightsHeadline": "Highlights",
+		"technologiesHeadline": "Technologies",
+		"screenshotsHeadline": "Screenshots",
+		"highlights": {
+			"haCluster": "HA Proxmox cluster (2 nodes + QDevice quorum)",
+			"replicationFailover": "Replication & automated failover",
+			"segmentedNetworking": "Segmented networking (OPNsense, VLANs, PBR, shaping)",
+			"storage": "ZFS + LVM storage (redundancy, caching, cold spares)",
+			"backups": "3‑2‑1 backups (encrypted offsite)",
+			"monitoring": "Monitoring & alerts (Grafana + InfluxDB)",
+			"provisioning": "Provisioning automation (Ansible + cloud‑init)",
+			"kubernetes": "Kubernetes clusters for services"
+		},
+		"imagesAlt": {
+			"rack": "Home Proxmox server rack",
+			"dashboard": "Proxmox VE dashboard"
+		}
+	},
+	"impressum": {
+		"headline": "Legal notice",
+		"legalHeadline": "Information requirements pursuant to § 5 ECG, § 14 UGB, § 63 GewO and § 24 MedienG",
+		"responsibleIntro": "Responsible for the content of this website:",
+		"responsible": {
+			"nameLabel": "Name",
+			"nameValue": "Andreas Schloessl",
+			"addressLabel": "Address",
+			"addressValue": "Rüdengasse 9/7, 1030 Vienna, Austria",
+			"contactLabel": "Contact"
+		},
+		"companyHeadline": "Company information",
+		"company": {
+			"form": "Sole proprietorship (self‑employed)",
+			"formLabel": "Company form",
+			"authority": "City of Vienna (Magistrate)",
+			"authorityLabel": "Regulatory authority",
+			"member": "Vienna Chamber of Commerce (WKO)",
+			"memberLabel": "Member of",
+			"profession": "IT services, software development",
+			"professionLabel": "Professional designation",
+			"lawsLabel": "Professional regulations",
+			"lawsText": "Trade Regulation Act (GewO) available at"
+		},
+		"liabilityHeadline": "Disclaimer",
+		"liabilityText": "The content of this website has been created with the utmost care. However, no warranty is given for the correctness, completeness and up‑to‑dateness of the content. As a service provider, I am responsible for my own content on these pages in accordance with general laws (§ 7 para. 1 TMG). According to §§ 8 to 10 TMG, however, I am not obliged as a service provider to monitor transmitted or stored third‑party information or to investigate circumstances that indicate illegal activity. Obligations to remove or block the use of information in accordance with general laws remain unaffected.",
+		"copyrightHeadline": "Copyright",
+		"copyrightText": "The content and works created by the site operator on these pages are subject to Austrian copyright law. Contributions by third parties are marked as such. Duplication, editing, distribution and any kind of use outside the limits of copyright law require the written consent of the respective author or creator. Downloads and copies of this site are permitted only for private, non‑commercial use.",
+		"imagesHeadline": "Image credits",
+		"imagesText": "Unless otherwise stated, graphics, icons and images come from my own sources or free libraries. Brand and product names are the property of their respective rights holders."
+	}
 }

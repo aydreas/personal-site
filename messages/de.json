@@ -6,13 +6,15 @@
 	},
 	"heroContent": {
 		"headline": "Flexibler IT-Dienstleister für Entwicklung & Infrastruktur",
-		"paragraph": "Ich unterstütze Unternehmen als flexibler IT-Dienstleister mit Fokus auf Softwareentwicklung, Systemadministration und technischer Beratung. Ob Entwicklung von Anwendungen, Aufbau moderner Cloud-Infrastrukturen oder zuverlässiger IT-Support – ich liefere pragmatische, skalierbare Lösungen, die direkt im Tagesgeschäft spürbar helfen. Ich arbeite auf Stunden- oder Projektbasis, ermögliche schnelle Reaktionszeiten und passe mich exakt den Anforderungen deines Unternehmens an. Für Startups, KMU und bestehende IT-Teams bin ich ein zuverlässiger Partner, der sowohl kurzfristige Engpässe überbrückt als auch langfristige technische Weiterentwicklung unterstützt."
+		"paragraph": "Ich unterstütze Unternehmen als flexibler IT-Dienstleister mit Fokus auf Softwareentwicklung, Systemadministration und technischer Beratung. Ob Entwicklung von Anwendungen, Aufbau moderner Cloud-Infrastrukturen oder zuverlässiger IT-Support – ich liefere pragmatische, skalierbare Lösungen, die direkt im Tagesgeschäft spürbar helfen. Ich arbeite auf Stunden- oder Projektbasis, ermögliche schnelle Reaktionszeiten und passe mich exakt den Anforderungen deines Unternehmens an. Für Startups, KMU und bestehende IT-Teams bin ich ein zuverlässiger Partner, der sowohl kurzfristige Engpässe überbrückt als auch langfristige technische Weiterentwicklung unterstützt.",
+		"button_contact": "Kontakt aufnehmen",
+		"button_cv": "Lebenslauf"
 	},
 	"aboutContent": {
 		"headline": "Über mich",
-		"paragraph1": "Ich bin leidenschaftlicher Softwareentwickler und IT-Spezialist mit Fokus auf robuste Webanwendungen, Cloud-Infrastruktur und Automatisierung. In meiner täglichen Arbeit verbinde ich Entwicklung und Betrieb, um skalierbare Systeme mit klarer Architektur und effizienter Delivery zu schaffen.",
+		"paragraph1": "Ich bin leidenschaftlicher Softwareentwickler und IT-Spezialist mit Fokus auf robuste Webanwendungen, Cloud‑ sowie On‑Premises‑Infrastruktur und Automatisierung. In meiner täglichen Arbeit verbinde ich Entwicklung und Betrieb, um skalierbare Systeme mit klarer Architektur und effizienter Delivery zu schaffen.",
 		"paragraph2": "Besonders wichtig sind mir pragmatische Lösungen, saubere Codebasis und nachvollziehbare Prozesse. Ich arbeite gerne eng mit Teams zusammen, identifiziere Engpässe und setze Verbesserungen um, die langfristig Wartbarkeit und Geschwindigkeit erhöhen.",
-		"paragraph3": "Außerhalb von Kundenprojekten experimentiere ich mit neuen Technologien, optimiere DevOps-Workflows und erweitere mein Wissen in Sicherheits- und Performancefragen."
+		"paragraph3": "Außerhalb von Kundenprojekten betreibe ich einen privaten Proxmox‑Cluster und entwickle sowie pflege eigene Projekte. In Hard‑ und Software probiere ich kontinuierlich neue Technologien aus und arbeite daran, meine Fähigkeiten gezielt weiterzuentwickeln."
 	},
 	"servicesContent": {
 		"headline": "Meine Kernleistungen",
@@ -91,7 +93,7 @@
 			"bash": "Automatisierung mit Shell-Skripten",
 			"opnsense": "Leistungsstarke Open-Source-Firewall",
 			"activeDirectory": "Zentralisiertes Identitätsmanagement",
-			"powershell": "Skriptbare Admin-Automatisierung"
+			"powershell": "Skriptbare Admin Automatisierung"
 		}
 	},
 	"callToAction": {
@@ -139,7 +141,9 @@
 			"period": "Sep. 2021 – Okt. 2025",
 			"location": "Wien, Österreich",
 			"details": {
-				"1": "Softwareprojekte entwickelt und gestaltet"
+				"1": "Softwareprojekte entwickelt und gestaltet",
+				"2": "Refactorings geleitet, um Codequalität, Testabdeckung und Wartbarkeit zu verbessern (Linting, Typsicherheit)",
+				"3": "Lösungen gemeinsam mit Kunden effizient erarbeitet und zielgerichtet umgesetzt"
 			}
 		},
 		"CS": {
@@ -148,7 +152,8 @@
 			"period": "Jun. 2021 – Aug. 2021",
 			"location": "Wien, Österreich",
 			"details": {
-				"1": "Webanwendungen entwickelt und bei Serverinfrastruktur beraten"
+				"1": "Webanwendungen entwickelt und bei Serverinfrastruktur operativ unterstützt",
+				"2": "Softwareprojekte für externe Kunden umgesetzt und bei technischen Aufgaben unterstützt (Feature‑Entwicklung, Bugfixes, Reviews)"
 			}
 		},
 		"NXAdmin": {
@@ -176,8 +181,10 @@
 			"description": "Kurzzeitpraktikum in der IT-Abteilung"
 		}
 	},
+	"projects": {
+		"headline": "Manchmal erzählen persönliche Projekte die besten Geschichten"
+	},
 	"logigator": {
-		"headline": "Manchmal erzählen persönliche Projekte die besten Geschichten",
 		"title": "Logigator: Digitale Logik einfach lernen & anwenden",
 		"intro": "Logigator ist eine von mir entwickelte offene Plattform zum Entwerfen und Simulieren digitaler Logikschaltungen direkt im Browser. Sie verbindet einen intuitiven Editor mit einer schnellen Echtzeitsimulation und eignet sich sowohl für erste Lernschritte als auch für anspruchsvollere Experimente mit komplexeren, hierarchischen Schaltungen.",
 		"highlightsHeadline": "Highlights",
@@ -185,6 +192,14 @@
 		"educationHeadline": "Bildung & Aufmerksamkeit",
 		"educationP1": "Das Projekt wurde in der Fachpresse vorgestellt – u. a. im IT‑Magazin c't (Ausgabe 15/2024). Darüber hinaus hat Logigator seinen Weg in Unterrichtsmaterialien und Schulbücher gefunden und unterstützt Lehrkräfte beim praxisnahen Vermitteln digitaler Logik. Die Kombination aus unmittelbarem Feedback und niedriger Einstiegshürde macht es ideal für Lernumgebungen und selbstgesteuertes Experimentieren.",
 		"educationP2": "Ich betreue die Plattform aktiv: Regelmäßige Wartung, Security‑Updates, gezielte Fehlerbehebungen und qualitative Verbesserungen sorgen für ein verlässlich stabiles Fundament. Nutzer profitieren von einem konsistenten Erlebnis und einer robusten Codebasis, auf deren Grundlage ich bedarfsorientiert neue Optimierungen und sinnvolle Erweiterungen einbringe.",
+		"highlights": {
+			"interactive": "Interaktive Logiksimulation",
+			"editor": "WebGL basierter Schaltungseditor mit Drag & Drop",
+			"hierarchical": "Hierarchische Bausteine / ICs",
+			"share": "Teilen von Projekten & Kooperatives Arbeiten",
+			"simulation": "Leistungsstarke Simulationslogik in C++",
+			"openSource": "Open Source & Kostenlos"
+		},
 		"links": {
 			"ct": {
 				"label": "c't Artikel (15/2024)",
@@ -207,5 +222,58 @@
 				"href": "https://github.com/logigator/logigator"
 			}
 		}
+	},
+	"proxmoxCluster": {
+		"title": "Mein Homelab: Proxmox‑Virtualisierung",
+		"introP1": "Ich betreibe ein selbstgehostetes Heim‑Infrastrukturlabor, das einer kleinen Produktionsumgebung sehr nahe kommt. Es basiert auf einem Proxmox‑Cluster mit zwei Nodes und einem externen QDevice zur Aufrechterhaltung des Quorums. Darauf laufen hochverfügbare virtuelle Maschinen und Container mit Replikation und automatischem Failover. Der Netzwerkverkehr für Heim‑ und virtualisierte Workloads wird durch eine virtualisierte OPNsense‑Firewall abgewickelt – mit VLAN‑basierter Segmentierung, Policy‑basiertem Routing und Traffic‑Shaping für Isolation und Kontrolle.",
+		"introP2": "Das Storage‑Backend verwaltet über 400 TB Daten mittels ZFS und LVM – inklusive Redundanz, Caching‑schichten und Cold‑Spares. Die Datensicherung folgt einer 3‑2‑1‑Backup‑Strategie mit automatisierten, verschlüsselten Offsite‑Backups. Die gesamte Umgebung wird mit Grafana und InfluxDB überwacht und liefert Metriken sowie Alarme für kritische Fehlerzustände. Die Bereitstellung der Infrastruktur ist weitgehend mit Ansible und cloud‑init automatisiert, und mehrere Kubernetes‑Cluster betreiben sowohl private Dienste als auch öffentlich erreichbare Workloads wie Logigator.",
+		"highlightsHeadline": "Highlights",
+		"technologiesHeadline": "Technologien",
+		"screenshotsHeadline": "Screenshots",
+		"highlights": {
+			"haCluster": "HA‑Proxmox‑Cluster (2 Nodes + QDevice‑Quorum)",
+			"replicationFailover": "Replikation & automatisches Failover",
+			"segmentedNetworking": "Segmentiertes Netzwerk (OPNsense, VLANs, PBR, Shaping)",
+			"storage": "ZFS + LVM‑Storage (Redundanz, Caching, Cold‑Spares)",
+			"backups": "3‑2‑1‑Backups (verschlüsselt Offsite)",
+			"monitoring": "Monitoring & Alerts (Grafana + InfluxDB)",
+			"provisioning": "Automatisierte Bereitstellung (Ansible + cloud‑init)",
+			"kubernetes": "Kubernetes‑Cluster für Services"
+		},
+		"imagesAlt": {
+			"rack": "Proxmox‑Heimserver‑Rack",
+			"dashboard": "Proxmox VE‑Dashboard"
+		}
+	},
+	"impressum": {
+		"headline": "Impressum",
+		"legalHeadline": "Informationspflicht gemäß § 5 ECG, § 14 UGB, § 63 GewO und § 24 MedienG",
+		"responsibleIntro": "Verantwortlich für den Inhalt dieser Website:",
+		"responsible": {
+			"nameLabel": "Name",
+			"nameValue": "Andreas Schloessl",
+			"addressLabel": "Adresse",
+			"addressValue": "Rüdengasse 9/7, 1030 Wien, Österreich",
+			"contactLabel": "Kontakt"
+		},
+		"companyHeadline": "Unternehmensdaten",
+		"company": {
+			"form": "Einzelunternehmen (Selbstständig)",
+			"formLabel": "Unternehmensform",
+			"authority": "Magistrat der Stadt Wien",
+			"authorityLabel": "Gewerbebehörde",
+			"member": "Wirtschaftskammer Wien (WKO)",
+			"memberLabel": "Mitglied bei",
+			"profession": "IT-Dienstleistungen, Softwareentwicklung",
+			"professionLabel": "Berufsbezeichnung",
+			"lawsLabel": "Berufsrechtliche Vorschriften",
+			"lawsText": "Gewerbeordnung (GewO) abrufbar unter"
+		},
+		"liabilityHeadline": "Haftungsausschluss",
+		"liabilityText": "Die Inhalte dieser Website wurden mit größter Sorgfalt erstellt. Für die Richtigkeit, Vollständigkeit und Aktualität der Inhalte wird jedoch keine Gewähr übernommen. Als Diensteanbieter bin ich gemäß § 7 Abs. 1 TMG für eigene Inhalte auf diesen Seiten nach den allgemeinen Gesetzen verantwortlich. Nach §§ 8 bis 10 TMG bin ich als Diensteanbieter jedoch nicht verpflichtet, übermittelte oder gespeicherte fremde Informationen zu überwachen oder nach Umständen zu forschen, die auf eine rechtswidrige Tätigkeit hinweisen. Verpflichtungen zur Entfernung oder Sperrung der Nutzung von Informationen nach den allgemeinen Gesetzen bleiben hiervon unberührt.",
+		"copyrightHeadline": "Urheberrecht",
+		"copyrightText": "Die durch den Seitenbetreiber erstellten Inhalte und Werke auf diesen Seiten unterliegen dem österreichischen Urheberrecht. Beiträge Dritter sind als solche gekennzeichnet. Die Vervielfältigung, Bearbeitung, Verbreitung und jede Art der Verwertung außerhalb der Grenzen des Urheberrechtes bedürfen der schriftlichen Zustimmung des jeweiligen Autors bzw. Erstellers. Downloads und Kopien dieser Seite sind nur für den privaten, nicht kommerziellen Gebrauch gestattet.",
+		"imagesHeadline": "Bildnachweise",
+		"imagesText": "Sofern nicht anders angegeben, stammen Grafiken, Icons und Bilder von eigenen Quellen oder freien Bibliotheken. Marken- und Produktnamen sind Eigentum der jeweiligen Rechteinhaber."
 	}
 }

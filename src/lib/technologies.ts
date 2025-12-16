@@ -158,7 +158,7 @@ export const technologies = {
 	githubActions: {
 		category: 'devops',
 		label: 'GitHub Actions',
-		color: 'gray',
+		color: 'secondary',
 		description: m['technologies.descriptions.githubActions']({}),
 		icon: 'devicon-githubactions-plain'
 	},

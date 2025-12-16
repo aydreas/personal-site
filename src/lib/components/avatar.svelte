@@ -6,13 +6,15 @@
 		src,
 		alt = '',
 		initials = '',
-		size = 'md'
+		size = 'md',
+		rounded = false
 	}: {
 		class?: string;
 		src?: string;
 		alt?: string;
 		initials?: string;
 		size?: AvatarSize;
+		rounded?: boolean;
 	} = $props();
 
 	let showFallback = $state(false);
@@ -63,7 +65,7 @@
 			'items-center',
 			'justify-center',
 			'overflow-hidden',
-			'rounded-full',
+			rounded ? 'rounded-full' : 'rounded-md',
 			'shrink-0',
 			sizeClassMap[size] ?? sizeClassMap.md,
 			color

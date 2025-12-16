@@ -2,6 +2,10 @@
 	import { Heading } from 'flowbite-svelte';
 	import Experiences, { type ExperienceEntry } from '$lib/components/experiences.svelte';
 	import { m } from '$lib/paraglide/messages';
+	import BitberryLogo from '$lib/assets/images/bitberry.jpeg';
+	import NavaxLogo from '$lib/assets/images/navax.jpeg';
+	import CorestadLogo from '$lib/assets/images/corestad.webp';
+	import BDBLogo from '$lib/assets/images/bdb.jpeg';
 
 	const experiences: ExperienceEntry[] = [
 		{
@@ -13,11 +17,6 @@
 			badges: [
 				'typescript',
 				'java',
-				'vue',
-				'svelte',
-				'nestjs',
-				'nodejs',
-				'graphql',
 				'docker',
 				'azure',
 				'ansible',
@@ -26,9 +25,7 @@
 				'githubActions',
 				'zfs',
 				'influx',
-				'linux',
-				'bash',
-				'opnsense'
+				'linux'
 			]
 		},
 		{
@@ -37,6 +34,7 @@
 			period: m['experiences.BBLead.period'](),
 			location: m['experiences.BBLead.location'](),
 			initials: 'BB',
+			image: BitberryLogo,
 			details: [
 				m['experiences.BBLead.details.1'](),
 				m['experiences.BBLead.details.2'](),
@@ -61,9 +59,13 @@
 			period: m['experiences.BBDev.period'](),
 			location: m['experiences.BBDev.location'](),
 			initials: 'BB',
-			details: [m['experiences.BBDev.details.1']()],
+			image: BitberryLogo,
+			details: [
+				m['experiences.BBDev.details.1'](),
+				m['experiences.BBDev.details.2'](),
+				m['experiences.BBDev.details.3']()
+			],
 			badges: [
-				'javascript',
 				'typescript',
 				'java',
 				'vue',
@@ -85,7 +87,8 @@
 			period: m['experiences.CS.period'](),
 			location: m['experiences.CS.location'](),
 			initials: 'CS',
-			details: [m['experiences.CS.details.1']()],
+			image: CorestadLogo,
+			details: [m['experiences.CS.details.1'](), m['experiences.CS.details.2']()],
 			badges: ['nodejs', 'vue', 'mongodb', 'mysql', 'docker', 'linux', 'graphql']
 		},
 		{
@@ -94,6 +97,7 @@
 			period: m['experiences.NXAdmin.period'](),
 			location: m['experiences.NXAdmin.location'](),
 			initials: 'NX',
+			image: NavaxLogo,
 			details: [m['experiences.NXAdmin.details.1'](), m['experiences.NXAdmin.details.2']()],
 			badges: [
 				'azure',
@@ -114,6 +118,7 @@
 			period: m['experiences.NXIntern.period'](),
 			location: m['experiences.NXIntern.location'](),
 			initials: 'NX',
+			image: NavaxLogo,
 			description: m['experiences.NXIntern.description'](),
 			badges: ['activeDirectory', 'powershell', 'linux', 'javascript']
 		},
@@ -123,6 +128,7 @@
 			period: m['experiences.BDBIntern.period'](),
 			location: m['experiences.BDBIntern.location'](),
 			initials: 'BDB',
+			image: BDBLogo,
 			description: m['experiences.BDBIntern.description'](),
 			badges: ['activeDirectory', 'powershell', 'javascript']
 		}

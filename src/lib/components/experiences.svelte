@@ -12,6 +12,7 @@
 		period: string; // displayed in date
 		location?: string;
 		initials: string; // placeholder logo text
+		image?: string; // logo image
 		details?: string[]; // bullet points
 		description?: string; // single paragraph
 		badges?: (keyof typeof technologies | { label: string; color: Color })[];
@@ -32,14 +33,16 @@
 	{#each entries as e (e.period)}
 		<TimelineItem date={e.period} title={buildExperienceTitle(e)}>
 			<div class="flex gap-4 mt-2">
-				<Avatar class="shrink-0" initials={e.initials}></Avatar>
+				<Avatar class="shrink-0" initials={e.initials} src={e.image}></Avatar>
 				<div class="grow">
 					{#if e.details}
-						<List class="list-disc ml-5 space-y-1">
+						<List class="list-disc ml-4 space-y-1">
 							{#each e.details as d (d)}<Li>{d}</Li>{/each}
 						</List>
 					{/if}
-					{#if e.description}<P class="mb-2">{e.description}</P>{/if}
+					{#if e.description}
+						<P class="mb-2">{e.description}</P>
+					{/if}
 					<div class="mt-3 flex flex-wrap gap-2">
 						{#each getBadges(e) as b (b)}
 							<Badge color={b.color}>{b.label}</Badge>

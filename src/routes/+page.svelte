@@ -1,4 +1,5 @@
 <script lang="ts">
+	import { Heading } from 'flowbite-svelte';
 	import Container from '$lib/components/container.svelte';
 	import Section from '$lib/components/section.svelte';
 	import HeroContent from '$lib/components/sections/hero-content.svelte';
@@ -8,7 +9,9 @@
 	import CallToActionContent from '$lib/components/sections/call-to-action-content.svelte';
 	import ExperiencesContent from '$lib/components/sections/experiences-content.svelte';
 	import EducationContent from '$lib/components/sections/education-content.svelte';
-	import Logigator from '$lib/components/sections/logigator.svelte';
+	import LogigatorContent from '$lib/components/sections/logigator-content.svelte';
+	import ProxmoxClusterContent from '$lib/components/sections/proxmox-cluster-content.svelte';
+	import { m } from '$lib/paraglide/messages.js';
 </script>
 
 <!-- Hero -->
@@ -53,8 +56,10 @@
 
 <!-- Projects -->
 <Section>
-	<Container>
-		<Logigator />
+	<Container class="flex flex-col gap-8">
+		<Heading tag="h2">{m['projects.headline']()}</Heading>
+		<LogigatorContent />
+		<ProxmoxClusterContent />
 	</Container>
 </Section>
 

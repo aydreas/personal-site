@@ -7,7 +7,7 @@
 
 <Heading tag="h2" class="mb-8">{m['aboutContent.headline']()}</Heading>
 <div class="flex flex-col items-center gap-8 lg:flex-row lg:items-start">
-	<Avatar initials="AS" src={portrait} size="6xl"></Avatar>
+	<Avatar initials="AS" src={portrait} size="6xl" rounded></Avatar>
 	<div class="space-y-4">
 		<P>{m['aboutContent.paragraph1']()}</P>
 		<P>{m['aboutContent.paragraph2']()}</P>
