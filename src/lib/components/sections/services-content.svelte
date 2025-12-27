@@ -19,8 +19,7 @@
 				m['servicesContent.admin.p2'](),
 				m['servicesContent.admin.p3'](),
 				m['servicesContent.admin.p4'](),
-				m['servicesContent.admin.p5'](),
-				m['servicesContent.admin.p6']()
+				m['servicesContent.admin.p5']()
 			]
 		},
 		{

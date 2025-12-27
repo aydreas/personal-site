@@ -30,9 +30,8 @@
 			"p1": "Betreuung bestehender Systeme",
 			"p2": "Monitoring",
 			"p3": "Security-Checks",
-			"p4": "Cloud-Einrichtung (AWS/Azure/GCP)",
-			"p5": "Containerisierung",
-			"p6": "CI/CD"
+			"p4": "Containerisierung",
+			"p5": "CI/CD"
 		},
 		"consulting": {
 			"title": "IT-Consulting & Architekturberatung",
