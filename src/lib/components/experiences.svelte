@@ -31,7 +31,11 @@
 
 <Timeline>
 	{#each entries as e (e.period)}
-		<TimelineItem date={e.period} title={buildExperienceTitle(e)}>
+		<TimelineItem
+			date={e.period}
+			title={buildExperienceTitle(e)}
+			timeClass="text-gray-500 dark:text-gray-400"
+		>
 			<div class="flex gap-4 mt-2">
 				<Avatar class="shrink-0" initials={e.initials} src={e.image}></Avatar>
 				<div class="grow">

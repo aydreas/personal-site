@@ -14,7 +14,7 @@
 <Label>
 	<span class="sr-only">{m['languageSelector.label']()}</span>
 	<Select
-		class="w-42"
+		selectClass="w-42 cursor-pointer"
 		placeholder={m['languageSelector.placeholder']()}
 		items={languages}
 		bind:value={selectedLanguage}

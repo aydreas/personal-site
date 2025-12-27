@@ -92,7 +92,7 @@
 	<NavBrand href="/">Andreas Schlößl</NavBrand>
 	<div class="flex gap-4">
 		<LanguageSelector></LanguageSelector>
-		<DarkMode></DarkMode>
+		<DarkMode class="cursor-pointer"></DarkMode>
 	</div>
 </Navbar>
 <main>{@render children()}</main>
