@@ -241,7 +241,8 @@
 		},
 		"imagesAlt": {
 			"rack": "Proxmox‑Heimserver‑Rack",
-			"dashboard": "Proxmox VE‑Dashboard"
+			"dashboard": "Proxmox VE‑Dashboard",
+			"grafana": "Grafana Dashboard"
 		}
 	},
 	"impressum": {

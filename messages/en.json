@@ -30,9 +30,8 @@
 			"p1": "Managing existing systems",
 			"p2": "Monitoring",
 			"p3": "Security checks",
-			"p4": "Cloud setup (AWS/Azure/GCP)",
-			"p5": "Containerization",
-			"p6": "CI/CD"
+			"p4": "Containerization",
+			"p5": "CI/CD"
 		},
 		"consulting": {
 			"title": "IT consulting & architecture advisory",
@@ -240,7 +239,8 @@
 		},
 		"imagesAlt": {
 			"rack": "Home Proxmox server rack",
-			"dashboard": "Proxmox VE dashboard"
+			"dashboard": "Proxmox VE dashboard",
+			"grafana": "Grafana dashboard"
 		}
 	},
 	"impressum": {

@@ -1,10 +1,12 @@
 <script lang="ts">
 	import { Card, Heading, P, Badge } from 'flowbite-svelte';
 	import type { ComponentProps } from 'svelte';
+	import ZoomableImage from '$lib/components/zoomable-image.svelte';
 	import { technologies } from '$lib/technologies';
 	import { m } from '$lib/paraglide/messages';
 	import RackImage from '$lib/assets/images/server/rack.webp';
 	import ProxmoxImage from '$lib/assets/images/server/proxmox_dashboard.png';
+	import GrafanaImage from '$lib/assets/images/server/grafana.png';
 
 	const highlights: { label: string; color?: ComponentProps<typeof Badge>['color'] }[] = [
 		{ label: m['proxmoxCluster.highlights.haCluster'](), color: 'primary' },
@@ -30,7 +32,8 @@
 
 	const images: { src: string; alt: string }[] = [
 		{ src: RackImage, alt: m['proxmoxCluster.imagesAlt.rack']() },
-		{ src: ProxmoxImage, alt: m['proxmoxCluster.imagesAlt.dashboard']() }
+		{ src: ProxmoxImage, alt: m['proxmoxCluster.imagesAlt.dashboard']() },
+		{ src: GrafanaImage, alt: m['proxmoxCluster.imagesAlt.grafana']() }
 	];
 </script>
 
@@ -78,9 +81,9 @@
 	<div class="space-y-3">
 		<Heading tag="h4" class="text-base">{m['proxmoxCluster.screenshotsHeadline']()}</Heading>
 		<div class="relative">
-			<div class="grid grid-cols-1 gap-4 md:grid-cols-4">
+			<div class="flex gap-4 flex-wrap">
 				{#each images as img (img.src)}
-					<img src={img.src} alt={img.alt} class="h-96 rounded-lg" loading="lazy" />
+					<ZoomableImage src={img.src} alt={img.alt} class="h-96 rounded-lg" loading="lazy" />
 				{/each}
 			</div>
 		</div>
