@@ -12,7 +12,6 @@
 	} from 'flowbite-svelte';
 	import LanguageSelector from '$lib/components/language-selector.svelte';
 	import '../app.css';
-	import favicon from '$lib/assets/favicon.svg';
 	import portrait from '$lib/assets/images/portrait_512.webp';
 
 	let { children } = $props();
@@ -27,7 +26,10 @@
 
 <svelte:head>
 	<title>{TITLE}</title>
-	<link rel="icon" href={favicon} />
+	<link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
+	<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png" />
+	<link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png" />
+	<link rel="manifest" href="/site.webmanifest" />
 
 	<link rel="preconnect" href="https://fonts.googleapis.com" />
 	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="anonymous" />
