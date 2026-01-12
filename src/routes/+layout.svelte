@@ -1,5 +1,5 @@
 <script lang="ts">
-	import { locales, localizeHref } from '$lib/paraglide/runtime';
+	import { deLocalizeHref, locales, localizeHref } from '$lib/paraglide/runtime';
 	import { page } from '$app/state';
 	import {
 		DarkMode,
@@ -55,11 +55,15 @@
 		<link
 			rel="alternate"
 			hreflang={locale}
-			href={`${page.url.origin}${localizeHref(page.url.pathname, { locale })}`}
+			href={`${page.url.origin}${localizeHref(page.url.pathname, { locale }).replace(/(?<=.+)\/$/, '')}`}
 		/>
 	{/each}
 	<!-- x-default fallback -->
-	<link rel="alternate" hreflang="x-default" href={`${page.url.origin}${page.url.pathname}`} />
+	<link
+		rel="alternate"
+		hreflang="x-default"
+		href={`${page.url.origin}${deLocalizeHref(page.url.pathname).replace(/(?<=.+)\/$/, '')}`}
+	/>
 
 	<!-- Open Graph -->
 	<meta property="og:type" content="website" />
@@ -83,8 +87,14 @@
 
 <div style="display:none">
 	{#each locales as locale (locale)}
-		<!-- eslint-disable-next-line svelte/no-navigation-without-resolve -->
-		<a href={localizeHref(page.url.pathname, { locale })}>{locale}</a>
+		<!-- eslint-disable svelte/no-navigation-without-resolve -->
+		<a
+			href={localizeHref(page.url.pathname.replace(/\/+$/, ''), { locale }).replace(
+				/(?<=.+)\/$/,
+				''
+			)}>{locale}</a
+		>
+		<!-- eslint-enable svelte/no-navigation-without-resolve -->
 	{/each}
 </div>
 
