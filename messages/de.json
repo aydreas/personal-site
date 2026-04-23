@@ -121,7 +121,7 @@
 			"company": "Selbstständig",
 			"role": "Unabhängiger IT-Berater & Entwickler",
 			"period": "Okt. 2025 – Heute",
-			"description": "Freiberufliche IT-Beratung und Softwareentwicklung"
+			"description": "Freiberufliche Softwareentwicklung und IT-Beratung mit Spezialisierung auf moderne Webanwendungen, Infrastrukturautomatisierung und DevOps-Tooling."
 		},
 		"BBLead": {
 			"company": "Bitberry",
@@ -129,9 +129,9 @@
 			"period": "Apr. 2023 – Okt. 2025",
 			"location": "Wien, Österreich",
 			"details": {
-				"1": "Konzeption, Implementierung und Wartung von CI/CD-Pipelines",
-				"2": "Verbesserung der Codequalität und Deployment-Workflows",
-				"3": "Verantwortung für Entwicklungs- und Produktionsinfrastruktur"
+				"1": "CI/CD-Pipelines (GitHub Actions) für mehrere Produktteams konzipiert und betrieben",
+				"2": "Entwicklungs- und Produktionsinfrastruktur auf Docker, Kubernetes, Azure und Proxmox aufgebaut und verantwortet",
+				"3": "Automatisierte Quality-Gates und standardisierte Deployment-Workflows in der gesamten Engineering-Organisation eingeführt"
 			}
 		},
 		"BBDev": {
@@ -140,9 +140,9 @@
 			"period": "Sep. 2021 – Okt. 2025",
 			"location": "Wien, Österreich",
 			"details": {
-				"1": "Softwareprojekte entwickelt und gestaltet",
-				"2": "Refactorings geleitet, um Codequalität, Testabdeckung und Wartbarkeit zu verbessern (Linting, Typsicherheit)",
-				"3": "Lösungen gemeinsam mit Kunden effizient erarbeitet und zielgerichtet umgesetzt"
+				"1": "End-to-End-Produktionswebanwendungen in TypeScript, Angular, Vue/Nuxt, React, NestJS und Java Spring entwickelt",
+				"2": "Refactoring-Initiativen geleitet, die Codequalität durch stärkere Typsicherheit, Linting und erweiterte Testabdeckung verbessert haben",
+				"3": "Eng mit Kunden und Produktteams zusammengearbeitet, um Lösungen effizient zu gestalten und umzusetzen"
 			}
 		},
 		"CS": {
@@ -161,8 +161,8 @@
 			"period": "Aug. 2018 – Dez. 2020",
 			"location": "Wien, Österreich",
 			"details": {
-				"1": "Windows-, Linux- und Microsoft-365-Umgebungen administriert",
-				"2": "Interne Tools zur Effizienzsteigerung der Infrastruktur gebaut"
+				"1": "Hybride Windows-, Linux- und Microsoft-365-Umgebungen administriert und Betrieb sowie Sicherheit für interne Nutzer sichergestellt",
+				"2": "Interne Tools in C# / .NET und Java Spring entwickelt, die das Server-Management optimiert und den manuellen Betriebsaufwand für das IT-Team reduziert haben"
 			}
 		},
 		"NXIntern": {

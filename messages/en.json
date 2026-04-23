@@ -121,7 +121,7 @@
 			"company": "Self‑employed",
 			"role": "Independent IT consultant & developer",
 			"period": "Oct. 2025 – Present",
-			"description": "Freelance IT consulting and software development"
+			"description": "Freelance software development and IT consulting, specialising in modern web applications, infrastructure automation, and DevOps tooling."
 		},
 		"BBLead": {
 			"company": "Bitberry",
@@ -129,9 +129,9 @@
 			"period": "Apr. 2023 – Oct. 2025",
 			"location": "Vienna, Austria",
 			"details": {
-				"1": "Concept, implementation and maintenance of CI/CD pipelines",
-				"2": "Improved code quality and deployment workflows",
-				"3": "Responsibility for development and production infrastructure"
+				"1": "Designed and maintained CI/CD pipelines (GitHub Actions) across multiple product teams",
+				"2": "Architected development and production infrastructure on Docker, Kubernetes, Azure, and Proxmox",
+				"3": "Enforced automated quality gates and standardised deployment workflows across the engineering organisation"
 			}
 		},
 		"BBDev": {
@@ -140,9 +140,9 @@
 			"period": "Sep. 2021 – Oct. 2025",
 			"location": "Vienna, Austria",
 			"details": {
-				"1": "Developed and designed software projects",
-				"2": "Led refactorings to improve code quality, test coverage and maintainability (linting, type safety)",
-				"3": "Worked closely with clients to efficiently shape and deliver solutions"
+				"1": "Delivered end‑to‑end production web applications in TypeScript, Angular, Vue/Nuxt, React, NestJS, and Java Spring",
+				"2": "Led refactoring initiatives that raised code quality through stronger type‑safety, linting, and expanded test coverage",
+				"3": "Worked closely with clients and product teams to efficiently shape and deliver solutions"
 			}
 		},
 		"CS": {
@@ -161,8 +161,8 @@
 			"period": "Aug. 2018 – Dec. 2020",
 			"location": "Vienna, Austria",
 			"details": {
-				"1": "Administered Windows, Linux and Microsoft 365 environments",
-				"2": "Built internal tools to increase infrastructure efficiency"
+				"1": "Administered hybrid Windows, Linux, and Microsoft 365 environments, maintaining uptime and security for internal users",
+				"2": "Developed internal tooling in C# / .NET and Java Spring that streamlined server management and reduced manual operational overhead for the IT team"
 			}
 		},
 		"NXIntern": {
