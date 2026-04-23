@@ -180,6 +180,9 @@
 			"description": "Kurzzeitpraktikum in der IT-Abteilung"
 		}
 	},
+	"cv": {
+		"downloadButton": "CV herunterladen"
+	},
 	"projects": {
 		"headline": "Manchmal erzählen persönliche Projekte die besten Geschichten"
 	},

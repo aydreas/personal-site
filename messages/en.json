@@ -180,6 +180,9 @@
 			"description": "Short-term internship in the IT department"
 		}
 	},
+	"cv": {
+		"downloadButton": "Download CV"
+	},
 	"projects": {
 		"headline": "Sometimes personal projects tell the best stories"
 	},

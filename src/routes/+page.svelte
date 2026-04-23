@@ -11,6 +11,7 @@
 	import EducationContent from '$lib/components/sections/education-content.svelte';
 	import LogigatorContent from '$lib/components/sections/logigator-content.svelte';
 	import ProxmoxClusterContent from '$lib/components/sections/proxmox-cluster-content.svelte';
+	import DownloadButton from '$lib/components/download-button.svelte';
 	import { m } from '$lib/paraglide/messages.js';
 </script>
 
@@ -44,12 +45,19 @@
 
 <!-- Timeline -->
 <Section id="cv">
-	<Container class="grid gap-8 lg:grid-cols-2">
-		<div>
-			<ExperiencesContent />
+	<Container class="flex flex-col gap-8">
+		<div class="grid gap-8 lg:grid-cols-2">
+			<div>
+				<ExperiencesContent />
+			</div>
+			<div>
+				<EducationContent />
+			</div>
 		</div>
-		<div>
-			<EducationContent />
+		<div class="flex justify-center">
+			<DownloadButton href="/CV.pdf" download="CV.pdf">
+				{m['cv.downloadButton']()}
+			</DownloadButton>
 		</div>
 	</Container>
 </Section>

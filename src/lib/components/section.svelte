@@ -1,11 +1,12 @@
 <script lang="ts">
+	import type { Snippet } from 'svelte';
+
 	const {
 		class: className,
 		variant,
 		children,
 		...otherProps
-		// eslint-disable-next-line @typescript-eslint/no-explicit-any
-	}: { class?: string; variant?: 'dark'; children: any } & { [key: string]: any } = $props();
+	}: { class?: string; variant?: 'dark'; children: Snippet } & { [key: string]: any } = $props();
 
 	const classes = $derived.by(() => {
 		let result = 'py-16';
