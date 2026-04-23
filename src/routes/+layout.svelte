@@ -13,6 +13,7 @@
 	import LanguageSelector from '$lib/components/language-selector.svelte';
 	import '../app.css';
 	import portrait from '$lib/assets/images/portrait_512.webp';
+	import { removeTrailingSlash } from '$lib/url';
 
 	let { children } = $props();
 
@@ -88,18 +89,13 @@
 <div style="display:none">
 	{#each locales as locale (locale)}
 		<!-- eslint-disable svelte/no-navigation-without-resolve -->
-		<a
-			href={localizeHref(page.url.pathname.replace(/\/+$/, ''), { locale }).replace(
-				/(?<=.+)\/$/,
-				''
-			)}>{locale}</a
-		>
+		<a href={removeTrailingSlash(localizeHref(page.url.pathname, { locale }))}>{locale}</a>
 		<!-- eslint-enable svelte/no-navigation-without-resolve -->
 	{/each}
 </div>
 
 <Navbar class="px-0 sm:px-0" navContainerClass="px-4 md:px-8">
-	<NavBrand href="/">Andreas Schlößl</NavBrand>
+	<NavBrand href={removeTrailingSlash(localizeHref('/'))}>Andreas Schlößl</NavBrand>
 	<div class="flex gap-4">
 		<LanguageSelector></LanguageSelector>
 		<DarkMode class="cursor-pointer"></DarkMode>
@@ -109,6 +105,6 @@
 <Footer>
 	<FooterCopyright></FooterCopyright>
 	<FooterLinkGroup>
-		<FooterLink href="/impressum">Impressum</FooterLink>
+		<FooterLink href={localizeHref('/impressum')}>Impressum</FooterLink>
 	</FooterLinkGroup>
 </Footer>

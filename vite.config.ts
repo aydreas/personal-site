@@ -13,7 +13,16 @@ export default defineConfig({
 		paraglideVitePlugin({
 			project: './project.inlang',
 			outdir: './src/lib/paraglide',
-			strategy: ['cookie', 'url', 'preferredLanguage', 'baseLocale']
+			strategy: ['url', 'cookie', 'preferredLanguage', 'baseLocale'],
+			urlPatterns: [
+				{
+					pattern: ':protocol://:domain(.*)::port?/:path(.*)?',
+					localized: [
+						['de', ':protocol://:domain(.*)::port?/de/:path(.*)?'],
+						['en', ':protocol://:domain(.*)::port?/en/:path(.*)?']
+					]
+				}
+			]
 		}),
 		// Remove unused devicon classes
 		pluginPurgeCss({
