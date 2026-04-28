@@ -13,7 +13,7 @@
 			role: m['experiences.SE.role'](),
 			period: m['experiences.SE.period'](),
 			initials: 'SE',
-			description: m['experiences.SE.description'](),
+			details: [m['experiences.SE.details.1'](), m['experiences.SE.details.2']()],
 			badges: [
 				'typescript',
 				'java',

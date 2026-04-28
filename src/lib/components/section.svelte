@@ -6,7 +6,9 @@
 		variant,
 		children,
 		...otherProps
-	}: { class?: string; variant?: 'dark'; children: Snippet } & { [key: string]: any } = $props();
+	}: { class?: string; variant?: 'dark'; children: Snippet } & {
+		[key: string]: unknown;
+	} = $props();
 
 	const classes = $derived.by(() => {
 		let result = 'py-16';

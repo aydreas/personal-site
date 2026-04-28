@@ -121,7 +121,10 @@
 			"company": "Selbstständig",
 			"role": "Unabhängiger IT-Berater & Entwickler",
 			"period": "Okt. 2025 – Heute",
-			"description": "Freiberufliche Softwareentwicklung und IT-Beratung mit Spezialisierung auf moderne Webanwendungen, Infrastrukturautomatisierung und DevOps-Tooling."
+			"details": {
+				"1": "Freiberufliche Softwareentwicklung und IT-Beratung rund um moderne Webanwendungen, Infrastrukturautomatisierung und DevOps-Tooling",
+				"2": "Wachsender Fokus auf KI-gestützte Produktfeatures: Entwurf von Custom-Agent-Architekturen und Aufbau von MCP-Servern, die Kundensysteme und APIs für LLMs zugänglich machen"
+			}
 		},
 		"BBLead": {
 			"company": "Bitberry",
@@ -140,9 +143,9 @@
 			"period": "Sep. 2021 – Okt. 2025",
 			"location": "Wien, Österreich",
 			"details": {
-				"1": "End-to-End-Produktionswebanwendungen in TypeScript, Angular, Vue/Nuxt, React, NestJS und Java Spring entwickelt",
-				"2": "Refactoring-Initiativen geleitet, die Codequalität durch stärkere Typsicherheit, Linting und erweiterte Testabdeckung verbessert haben",
-				"3": "Eng mit Kunden und Produktteams zusammengearbeitet, um Lösungen effizient zu gestalten und umzusetzen"
+				"1": "End-to-End-Produktionswebanwendungen in TypeScript-, Java- und Python-Stacks ausgeliefert, gemeinsam mit Kunden und Produktteams von der Architektur bis zum Rollout",
+				"2": "Architekt und Senior-Engineer für Redberry, ein föderiertes GraphQL-CMS-Framework, das mehrere gebrandete SaaS-Produkte aus einer einzigen Codebasis betreibt – beigetragen zur Service-Dekomposition, der Content-Type-Codegen-Pipeline und dem Multi-Tenant-Deployment-Modell",
+				"3": "Refactoring-Initiativen geleitet, die Codequalität durch stärkere Typsicherheit, Linting und erweiterte Testabdeckung verbessert haben"
 			}
 		},
 		"CS": {
@@ -151,8 +154,8 @@
 			"period": "Jun. 2021 – Aug. 2021",
 			"location": "Wien, Österreich",
 			"details": {
-				"1": "Webanwendungen entwickelt und bei Serverinfrastruktur operativ unterstützt",
-				"2": "Softwareprojekte für externe Kunden umgesetzt und bei technischen Aufgaben unterstützt (Feature‑Entwicklung, Bugfixes, Reviews)"
+				"1": "Zu extern beauftragten Webanwendungsprojekten beigetragen – Feature-Entwicklung, Bugfixing und Code-Reviews",
+				"2": "Operativen Support für Client-Serverinfrastruktur geleistet"
 			}
 		},
 		"NXAdmin": {

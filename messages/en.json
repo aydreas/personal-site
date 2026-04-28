@@ -121,7 +121,10 @@
 			"company": "Self‑employed",
 			"role": "Independent IT consultant & developer",
 			"period": "Oct. 2025 – Present",
-			"description": "Freelance software development and IT consulting, specialising in modern web applications, infrastructure automation, and DevOps tooling."
+			"details": {
+				"1": "Freelance software development and IT consulting around modern web applications, infrastructure automation, and DevOps tooling",
+				"2": "Growing focus on AI-assisted product features: designing custom agent architectures and building MCP servers that expose client systems and APIs to LLMs"
+			}
 		},
 		"BBLead": {
 			"company": "Bitberry",
@@ -140,9 +143,9 @@
 			"period": "Sep. 2021 – Oct. 2025",
 			"location": "Vienna, Austria",
 			"details": {
-				"1": "Delivered end‑to‑end production web applications in TypeScript, Angular, Vue/Nuxt, React, NestJS, and Java Spring",
-				"2": "Led refactoring initiatives that raised code quality through stronger type‑safety, linting, and expanded test coverage",
-				"3": "Worked closely with clients and product teams to efficiently shape and deliver solutions"
+				"1": "Delivered end-to-end production web applications across TypeScript, Java, and Python stacks, partnering with clients and product teams from architecture through rollout",
+				"2": "Architect and senior engineer on Redberry, a federated GraphQL CMS framework that powers multiple branded SaaS products from a single codebase – contributed to service decomposition, the content-type codegen pipeline, and the multi-tenant deployment model",
+				"3": "Led refactoring initiatives that raised code quality through stronger type-safety, linting, and expanded test coverage"
 			}
 		},
 		"CS": {
@@ -151,8 +154,8 @@
 			"period": "Jun. 2021 – Aug. 2021",
 			"location": "Vienna, Austria",
 			"details": {
-				"1": "Developed web applications and provided operational support for server infrastructure",
-				"2": "Implemented software projects for external clients and supported technical tasks (feature development, bug fixes, reviews)"
+				"1": "Contributed to externally commissioned web application projects – feature development, bug-fixing, and code review",
+				"2": "Provided operational support for client server infrastructure"
 			}
 		},
 		"NXAdmin": {
